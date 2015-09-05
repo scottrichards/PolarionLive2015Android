@@ -1,4 +1,4 @@
-package com.parse.starter.activities;
+package com.parse.starter;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,28 +10,25 @@ import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
-import com.parse.starter.R;
-import com.parse.starter.adapters.AgendaAdapter;
+import com.parse.starter.adapters.SpeakersAdapter;
 import com.parse.starter.model.AgendaItem;
-//import com.parse.ParseQueryAdapter;
-
+import com.parse.starter.model.Speaker;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class AgendaActivity extends ActionBarActivity {
-    private AgendaAdapter mAdapter;
-
+public class SpeakersActivity extends ActionBarActivity {
+    private SpeakersAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agenda);
+        setContentView(R.layout.activity_speakers);
 
-        ParseObject.registerSubclass(AgendaItem.class);
+        ParseObject.registerSubclass(Speaker.class);
 
-        mAdapter = new AgendaAdapter(this, new ArrayList<AgendaItem>());
+        mAdapter = new SpeakersAdapter(this, new ArrayList<Speaker>());
 
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(mAdapter);
@@ -39,15 +36,14 @@ public class AgendaActivity extends ActionBarActivity {
     }
 
     public void updateData(){
-        ParseQuery<AgendaItem> query = ParseQuery.getQuery(AgendaItem.class);
-//        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
-        query.findInBackground(new FindCallback<AgendaItem>() {
+        ParseQuery<Speaker> query = ParseQuery.getQuery(Speaker.class);
+        query.findInBackground(new FindCallback<Speaker>() {
             @Override
-            public void done(List<AgendaItem> agendaItems, ParseException error) {
-                if (agendaItems != null) {
+            public void done(List<Speaker> speakers, ParseException error) {
+                if (speakers != null) {
                     mAdapter.clear();
-                    for (int i = 0; i < agendaItems.size(); i++) {
-                        mAdapter.add(agendaItems.get(i));
+                    for (int i = 0; i < speakers.size(); i++) {
+                        mAdapter.add(speakers.get(i));
                     }
                 }
             }
@@ -57,7 +53,7 @@ public class AgendaActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_agenda, menu);
+        getMenuInflater().inflate(R.menu.menu_speakers, menu);
         return true;
     }
 

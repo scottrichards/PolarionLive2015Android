@@ -16,7 +16,7 @@ import com.parse.ParseACL;
 import com.parse.ParseUser;
 
 
-public class PolarionLiveApplication extends Application {
+public class StarterApplication extends Application {
 
   @Override
   public void onCreate() {
