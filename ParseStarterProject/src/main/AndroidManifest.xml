@@ -51,6 +51,10 @@
             android:name=".activities.RegisterActivity"
             android:label="@string/title_activity_register" >
         </activity>
+        <activity
+            android:name=".activities.RaffleActivity"
+            android:label="@string/title_activity_raffle" >
+        </activity>
     </application>
 
 </manifest>

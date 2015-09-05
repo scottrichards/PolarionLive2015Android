@@ -43,4 +43,14 @@
         android:layout_centerHorizontal="true"
         android:onClick="onLogin"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raffle"
+        android:id="@+id/raffle"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:onClick="onRaffle"
+        />
 </RelativeLayout>
