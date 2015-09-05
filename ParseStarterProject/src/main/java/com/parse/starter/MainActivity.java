@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.parse.ParseAnalytics;
+import com.parse.starter.activities.AgendaActivity;
+import com.parse.starter.activities.SpeakersActivity;
 
 
 public class MainActivity extends ActionBarActivity {

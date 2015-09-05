@@ -36,11 +36,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AgendaActivity"
+            android:name=".activities.AgendaActivity"
             android:label="@string/title_activity_agenda" >
         </activity>
         <activity
-            android:name=".SpeakersActivity"
+            android:name=".activities.SpeakersActivity"
             android:label="@string/title_activity_speakers" >
         </activity>
     </application>
