@@ -1,4 +1,4 @@
-package com.parse.starter;
+package com.parse.starter.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.parse.starter.R;
 import com.parse.starter.model.AgendaItem;
 
 import java.util.List;
