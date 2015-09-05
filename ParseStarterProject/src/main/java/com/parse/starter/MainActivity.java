@@ -17,6 +17,7 @@ import android.view.View;
 
 import com.parse.ParseAnalytics;
 import com.parse.starter.activities.AgendaActivity;
+import com.parse.starter.activities.LoginActivity;
 import com.parse.starter.activities.SpeakersActivity;
 
 
@@ -60,5 +61,10 @@ public class MainActivity extends ActionBarActivity {
   public void onSpeakers(View view) {
     Intent speakersIntent = new Intent(MainActivity.this,SpeakersActivity.class);
     startActivity(speakersIntent);
+  }
+
+  public void onLogin(View view) {
+    Intent loginIntent = new Intent(MainActivity.this,LoginActivity.class);
+    startActivity(loginIntent);
   }
 }

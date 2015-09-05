@@ -43,6 +43,10 @@
             android:name=".activities.SpeakersActivity"
             android:label="@string/title_activity_speakers" >
         </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
