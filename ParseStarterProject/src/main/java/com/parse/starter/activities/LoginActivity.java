@@ -7,9 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.parse.LogInCallback;
+import com.parse.LogOutCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.starter.MainActivity;
@@ -19,18 +21,35 @@ public class LoginActivity extends ActionBarActivity {
     private EditText mUsernameField;
     private EditText mPasswordField;
     private TextView mErrorField;
+    private TextView mLoggedInField;
     private String mFromActivity; // the Activity that launched this activity if it was Raffle go back to Raffle upon login
     private ParseUser mCurrentUser;
+    LinearLayout mLogInView;
+    LinearLayout mLoggedInView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mCurrentUser = ParseUser.getCurrentUser();
+        mLogInView = (LinearLayout) findViewById(R.id.logInView);
+        mLoggedInView = (LinearLayout) findViewById(R.id.loggedInView);
         if (mCurrentUser == null) {
+            mLoggedInView.setVisibility(LinearLayout.GONE);
+            mLogInView.setVisibility(View.VISIBLE);
+            mLogInView.invalidate();
+            mLoggedInView.invalidate();
             mUsernameField = (EditText) findViewById(R.id.login_username);
             mPasswordField = (EditText) findViewById(R.id.login_password);
             mErrorField = (TextView) findViewById(R.id.error_messages);
+        } else {
+            mLogInView.setVisibility(View.GONE);
+            mLoggedInView.setVisibility(View.VISIBLE);
+            mLogInView.invalidate();
+            mLoggedInView.invalidate();
+            mLoggedInField = (TextView) findViewById(R.id.loggedinMessage);
+            String loggedInString = "Logged in as: " + mCurrentUser.getUsername();
+            mLoggedInField.setText(loggedInString);
         }
         mFromActivity = getIntent().getStringExtra("from");
     }
@@ -103,7 +122,16 @@ public class LoginActivity extends ActionBarActivity {
     }
 
     public void onLogout(View v) {
-        ParseUser.logOutInBackground();
+        ParseUser.logOutInBackground(new LogOutCallback() {
+            public void done(ParseException e) {
+                if (e == null) {
+                    mLoggedInView.setVisibility(View.GONE);
+                    mLogInView.setVisibility(View.VISIBLE);
+                } else {
+                    mErrorField.setText("Sorry, problem loggin out.");
+                }
+            }
+        });
 
     }
 }
