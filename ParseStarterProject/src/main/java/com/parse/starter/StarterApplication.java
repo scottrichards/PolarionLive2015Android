@@ -29,7 +29,7 @@ public class StarterApplication extends Application {
     Parse.initialize(this, "ytC7lrxAdRDvguofSHtRLyPe8DdiO5MdC4VdMDoz", "GIX1MZRR1rPqQGEOTEKwyNa6FuHWLhuiy3HyrVPt");
 
 
-    ParseUser.enableAutomaticUser();
+//    ParseUser.enableAutomaticUser();  // This causes getCurrentUser to always return a user
     ParseACL defaultACL = new ParseACL();
     // Optionally enable public read access.
     // defaultACL.setPublicReadAccess(true);

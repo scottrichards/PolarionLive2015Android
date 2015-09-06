@@ -19,15 +19,20 @@ public class LoginActivity extends ActionBarActivity {
     private EditText mUsernameField;
     private EditText mPasswordField;
     private TextView mErrorField;
+    private String mFromActivity; // the Activity that launched this activity if it was Raffle go back to Raffle upon login
+    private ParseUser mCurrentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        mUsernameField = (EditText) findViewById(R.id.login_username);
-        mPasswordField = (EditText) findViewById(R.id.login_password);
-        mErrorField = (TextView) findViewById(R.id.error_messages);
+        mCurrentUser = ParseUser.getCurrentUser();
+        if (mCurrentUser == null) {
+            mUsernameField = (EditText) findViewById(R.id.login_username);
+            mPasswordField = (EditText) findViewById(R.id.login_password);
+            mErrorField = (TextView) findViewById(R.id.error_messages);
+        }
+        mFromActivity = getIntent().getStringExtra("from");
     }
 
     @Override
@@ -58,8 +63,13 @@ public class LoginActivity extends ActionBarActivity {
             @Override
             public void done(ParseUser user, ParseException e) {
                 if (user != null) {
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    if (mFromActivity.compareTo(RaffleActivity.class.toString()) == 0) {
+                        Intent intent = new Intent(LoginActivity.this, RaffleActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                    }
                     finish();
                 } else {
                     // Signup failed. Look at the ParseException to see what happened.
@@ -90,5 +100,10 @@ public class LoginActivity extends ActionBarActivity {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void onLogout(View v) {
+        ParseUser.logOutInBackground();
+
     }
 }

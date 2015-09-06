@@ -24,6 +24,11 @@ public class RaffleActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raffle);
         ParseUser currentUser = ParseUser.getCurrentUser();
+        if (currentUser == null) {
+            Intent loginIntent = new Intent(this,LoginActivity.class);
+            loginIntent.putExtra("from",RaffleActivity.class.toString());
+            startActivity(loginIntent);
+        }
     }
 
     @Override
