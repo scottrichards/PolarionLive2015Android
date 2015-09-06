@@ -15,6 +15,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.starter.MainActivity;
 import com.parse.starter.R;
+import com.parse.starter.utility.URLService;
 
 public class RaffleActivity extends ActionBarActivity {
 
@@ -80,5 +81,31 @@ public class RaffleActivity extends ActionBarActivity {
             startActivity(intent);
             finish();
         }
+    }
+
+    public void openURL(String url)
+    {
+        Intent webIntent = new Intent(this,WebActivity.class);
+        webIntent.putExtra("url",url);
+        startActivity(webIntent);
+
+    }
+
+    public void onSampleTestimonial(View view)
+    {
+//        openURL(URLService.buildUrl("testimonial.html"));
+        Intent webIntent = new Intent(this,WebActivity.class);
+        webIntent.putExtra("url",URLService.buildUrl("testimonial.html"));
+        webIntent.putExtra("title","Sample Testimonials");
+        startActivity(webIntent);
+    }
+
+    public void onRules(View view)
+    {
+//        openURL(URLService.buildUrl("rules.html"));
+        Intent webIntent = new Intent(this,WebActivity.class);
+        webIntent.putExtra("url",URLService.buildUrl("rules.html"));
+        webIntent.putExtra("title","Raffle Rules");
+        startActivity(webIntent);
     }
 }

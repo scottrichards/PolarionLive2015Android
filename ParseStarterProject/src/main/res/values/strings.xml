@@ -28,4 +28,7 @@
     <string name="title_activity_raffle">RaffleActivity</string>
     <string name="check_marketing_usage">Please consent to marketing usage to enter the raffle.</string>
     <string name="provide_testimonial">Please provide a testimonial to enter the raffle.</string>
+    <string name="title_activity_web">WebActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

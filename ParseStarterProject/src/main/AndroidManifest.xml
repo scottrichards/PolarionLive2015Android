@@ -55,6 +55,10 @@
             android:name=".activities.RaffleActivity"
             android:label="@string/title_activity_raffle" >
         </activity>
+        <activity
+            android:name=".activities.WebActivity"
+            android:label="@string/title_activity_web" >
+        </activity>
     </application>
 
 </manifest>
