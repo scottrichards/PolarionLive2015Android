@@ -18,17 +18,21 @@
     <string name="title_activity_speakers">Speakers</string>
     <string name="title_activity_register">Register</string>
     <string name="action_logout">Logout</string>
-    <string name="username">Username:</string>
+    <string name="username">Username</string>
     <string name="sign_up_label">Sign Up</string>
+    <string name="password">Password</string>
     <string name="password_label">Password:</string>
     <string name="already_have_an_account_label">Already Have An Account? Log In!</string>
     <string name="sign_in_label">Sign In</string>
-    <string name="dont_have_an_account_label">Don\'t have an account? Register!</string>
+    <string name="dont_have_an_account_label">Don\'t have an account? Signup!</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_raffle">RaffleActivity</string>
     <string name="check_marketing_usage">Please consent to marketing usage to enter the raffle.</string>
     <string name="provide_testimonial">Please provide a testimonial to enter the raffle.</string>
     <string name="title_activity_web">WebActivity</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="email">EMail</string>
+    <string name="company">Company</string>
+    <string name="title">Title</string>
+    <string name="fullName">Full Name</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

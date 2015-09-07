@@ -19,7 +19,11 @@ public class RegisterActivity extends ActionBarActivity {
 
     private EditText mUsernameField;
     private EditText mPasswordField;
+    private EditText mEMailField;
+    private EditText mCompanyField;
+    private EditText mTitleField;
     private TextView mErrorField;
+    private EditText mFullNameField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,12 @@ public class RegisterActivity extends ActionBarActivity {
 
         mUsernameField = (EditText) findViewById(R.id.register_username);
         mPasswordField = (EditText) findViewById(R.id.register_password);
+        mEMailField = (EditText) findViewById(R.id.email);
+        mCompanyField= (EditText) findViewById(R.id.company);
+        mTitleField = (EditText) findViewById(R.id.title);
         mErrorField = (TextView) findViewById(R.id.error_messages);
+        mFullNameField = (EditText) findViewById(R.id.fullName);
+
     }
 
     @Override
@@ -61,6 +70,10 @@ public class RegisterActivity extends ActionBarActivity {
         ParseUser user = new ParseUser();
         user.setUsername(mUsernameField.getText().toString());
         user.setPassword(mPasswordField.getText().toString());
+        user.setEmail(mEMailField.getText().toString());
+        user.put("company",mCompanyField.getText().toString());
+        user.put("title",mTitleField.getText().toString());
+        user.put("fullName",mFullNameField.getText().toString());
         mErrorField.setText("");
 
         user.signUpInBackground(new SignUpCallback() {
