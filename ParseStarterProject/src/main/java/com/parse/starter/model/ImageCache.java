@@ -11,8 +11,14 @@ public class ImageCache extends Object {
     public View convertView;
     public String url;
 
-    public ImageCache(Bitmap bitmap,View convertView,String url) {
-        this.bitmap = bitmap;
+//    public ImageCache(Bitmap bitmap,View convertView,String url) {
+//        this.bitmap = bitmap;
+//        this.convertView = convertView;
+//        this.url = url;
+//    }
+
+    public ImageCache(View convertView,String url) {
+        //this.bitmap = bitmap;
         this.convertView = convertView;
         this.url = url;
     }

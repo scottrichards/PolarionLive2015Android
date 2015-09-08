@@ -3,6 +3,7 @@ package com.parse.starter.adapters;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.starter.R;
 import com.parse.starter.model.AgendaItem;
+import com.parse.starter.model.ImageCache;
 import com.parse.starter.model.Speaker;
 
 import java.util.HashMap;
@@ -28,13 +30,13 @@ public class SpeakersAdapter extends ArrayAdapter<Speaker> {
     private Context mContext;
     private List<Speaker> mSpeakers;
     View mConvertView;
-    HashMap<String,View> mMapTable;
+    HashMap<String,ImageCache> mMapTable;
 
     public SpeakersAdapter(Context context, List<Speaker> objects) {
         super(context, R.layout.speaker_row_item, objects);
         this.mContext = context;
         this.mSpeakers = objects;
-        mMapTable = new HashMap<String,View>();
+        mMapTable = new HashMap<String,ImageCache>();
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
@@ -61,19 +63,37 @@ public class SpeakersAdapter extends ArrayAdapter<Speaker> {
         final ParseFile imageFile = (ParseFile)speaker.get("headshot");
 
         if (imageFile != null) {
-            mMapTable.put(imageFile.getUrl(),mConvertView); // save the view by url in hash map table so we can retrieve it after asynchronous callback
-            imageFile.getDataInBackground(new GetDataCallback() {
-                @Override
-                public void done(byte[] data, ParseException e) {
-                    Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
-                    View rowView = mMapTable.get(imageFile.getUrl());
-                    if (rowView != null) {
-                        ImageView headshotView = (ImageView) rowView.findViewById(R.id.headshot);
-                        // Set the Bitmap into the ImageView
-                        headshotView.setImageBitmap(bmp);
+//            ImageCache imageCache = mMapTable.get(imageFile.getUrl());
+//            Log.d("SpeakersAdapter", "Loading image for: " + speaker.getName() + " = " + imageFile.getUrl());
+//            if (imageCache == null /*|| imageCache.bitmap == null*/) {
+//                Log.d("SpeakersAdapter", "imageCache == null || imageCache.bitmap == null " + speaker.getName());
+//                if (imageCache == null) {   // if it has not been entered in hash table then add it
+                    ImageView headshotView = (ImageView) mConvertView.findViewById(R.id.headshot);
+                    headshotView.setImageBitmap(null);  // clear out the image
+                    ImageCache imageCache = new ImageCache(mConvertView, imageFile.getUrl());
+                    mMapTable.put(imageFile.getUrl(), imageCache); // save the view by url in hash map table so we can retrieve it after asynchronous callback
+//                }
+                imageFile.getDataInBackground(new GetDataCallback() {
+                    @Override
+                    public void done(byte[] data, ParseException e) {
+                        ImageCache localImageCache = mMapTable.get(imageFile.getUrl());
+                        if (localImageCache != null) {
+                            localImageCache.bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+                            ImageView headshotView = (ImageView) localImageCache.convertView.findViewById(R.id.headshot);
+                            // Set the Bitmap into the ImageView
+                            headshotView.setImageBitmap(localImageCache.bitmap);
+                        }
                     }
-                }
-            });
+                });
+//            }
+//            else {
+//                ImageCache localImageCache = mMapTable.get(imageFile.getUrl());
+//                if (localImageCache != null) {
+//                    ImageView headshotView = (ImageView) convertView.findViewById(R.id.headshot);
+//                    // Set the Bitmap into the ImageView
+//                    headshotView.setImageBitmap(localImageCache.bitmap);
+//                }
+//            }
         } else {
             ImageView headshotView = (ImageView) mConvertView.findViewById(R.id.headshot);
             headshotView.setImageBitmap(null);  // clear out the image
