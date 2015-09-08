@@ -57,4 +57,8 @@ public class AgendaItem extends ParseObject {
     public void setLocation(String location){
         put("location", location);
     }
+
+    public String getIcon(){
+        return getString("icon");
+    }
 }

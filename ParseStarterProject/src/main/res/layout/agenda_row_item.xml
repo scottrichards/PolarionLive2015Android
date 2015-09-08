@@ -4,10 +4,12 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/iconView"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="8:00 - 10:100"
         android:id="@+id/displayTime"
-        android:layout_toRightOf="@+id/icon"/>
+        android:layout_toRightOf="@+id/iconView"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,15 +35,8 @@
         android:text="Session"
         android:id="@+id/sessionName"
         android:layout_below="@id/displayTime"
-        android:layout_toRightOf="@+id/icon"
+        android:layout_toRightOf="@+id/iconView"
         android:textColor="#ff233c66" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/sessionName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
