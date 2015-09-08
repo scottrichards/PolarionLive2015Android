@@ -18,6 +18,7 @@ import android.view.View;
 import com.parse.ParseAnalytics;
 import com.parse.starter.activities.AgendaActivity;
 import com.parse.starter.activities.LoginActivity;
+import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 
@@ -72,5 +73,10 @@ public class MainActivity extends ActionBarActivity {
   public void onRaffle(View view) {
     Intent raffleIntent = new Intent(MainActivity.this,RaffleActivity.class);
     startActivity(raffleIntent);
+  }
+
+  public void onMap(View view) {
+    Intent mapIntent = new Intent(MainActivity.this,MapsActivity.class);
+    startActivity(mapIntent);
   }
 }
