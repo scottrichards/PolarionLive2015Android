@@ -10,11 +10,13 @@ package com.parse.starter;
 
 //import android.app.Activity;
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 
 //import android.support.v4.view.GravityCompat;
@@ -42,10 +44,11 @@ import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
+import com.parse.starter.fragments.SocialFragment;
 import com.parse.starter.model.DrawerItem;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements SocialFragment.OnFragmentInteractionListener {
 
   private DrawerLayout mDrawerLayout;
   private ListView mDrawerList;
@@ -159,59 +162,88 @@ public class MainActivity extends ActionBarActivity {
     return super.onOptionsItemSelected(item);
   }
 
+  @Override
+  public void onFragmentInteraction(Uri uri) {
+    Log.d("MainActivity","onFragmentInteraction: " + uri);
+  }
+
   /* The click listner for ListView in the navigation drawer */
   private class DrawerItemClickListener implements ListView.OnItemClickListener {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
       Log.d("MainActivity","Clicked in Drawer Position: " + position);
-      switch (position) {
-        case 1 :  mDrawerList.setItemChecked(position, true);
-                  DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-                  if (drawerItem != null)
-                    setTitle(drawerItem.title);
-                  mDrawerLayout.closeDrawer(mDrawerList);
-                  Intent agendaIntent = new Intent(MainActivity.this,AgendaActivity.class);
-                  startActivity(agendaIntent);
-                  finish();
-                  break;
-        case 2 :  Intent speakersIntent = new Intent(MainActivity.this,SpeakersActivity.class);
-                  startActivity(speakersIntent);
-                  finish();
-                  break;
-        case 3 :  Intent mapIntent = new Intent(MainActivity.this,MapsActivity.class);
-                  startActivity(mapIntent);
-                  finish();
-                  break;
-        case 4 :  Intent raffleIntent = new Intent(MainActivity.this,RaffleActivity.class);
-                  startActivity(raffleIntent);
-                  finish();
-                  break;
-        case 5 :  Intent loginIntent = new Intent(MainActivity.this,LoginActivity.class);
-                  startActivity(loginIntent);
-                  finish();
-                  break;
-      }
- //     selectItem(position);
+
+
+//      switch (position) {
+//        case 1 :  mDrawerList.setItemChecked(position, true);
+//                  DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+//                  if (drawerItem != null)
+//                    setTitle(drawerItem.title);
+//                  mDrawerLayout.closeDrawer(mDrawerList);
+//                  Intent agendaIntent = new Intent(MainActivity.this,AgendaActivity.class);
+//                  startActivity(agendaIntent);
+//                  finish();
+//                  break;
+//        case 2 :  Intent speakersIntent = new Intent(MainActivity.this,SpeakersActivity.class);
+//                  startActivity(speakersIntent);
+//                  finish();
+//                  break;
+//        case 3 :  Intent mapIntent = new Intent(MainActivity.this,MapsActivity.class);
+//                  startActivity(mapIntent);
+//                  finish();
+//                  break;
+//        case 4 :  Intent raffleIntent = new Intent(MainActivity.this,RaffleActivity.class);
+//                  startActivity(raffleIntent);
+//                  finish();
+//                  break;
+//        case 5 :  Intent loginIntent = new Intent(MainActivity.this,LoginActivity.class);
+//                  startActivity(loginIntent);
+//                  finish();
+//                  break;
+//        case 6: mDrawerList.setItemChecked(position, true);
+//                drawerItem = mDrawerAdapter.getItem(position);
+//                if (drawerItem != null)
+//                  setTitle(drawerItem.title);
+//                mDrawerLayout.closeDrawer(mDrawerList);
+//                FragmentManager fragmentManager = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                SocialFragment fragment = new SocialFragment();
+//                fragmentTransaction.add(R.id.frame_contents, fragment);
+//                fragmentTransaction.commit();
+//                break;
+//
+//      }
+        selectItem(position);
     }
   }
 //
-//  private void selectItem(int position) {
-//    // update the main content by replacing fragments
-//    Fragment fragment = new DrawerFragment(mDrawerAdapter);
-//    Bundle args = new Bundle();
-//    args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
-//    fragment.setArguments(args);
-//
-//    FragmentManager fragmentManager = getFragmentManager();
-//    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-//
-//    // update selected item and title, then close the drawer
-//    mDrawerList.setItemChecked(position, true);
-//    DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-//    if (drawerItem != null)
-//      setTitle(drawerItem.title);
-//    mDrawerLayout.closeDrawer(mDrawerList);
-//  }
+  private void selectItem(int position) {
+    // update the main content by replacing fragments
+    if (position == 6) {
+      SocialFragment fragment = new SocialFragment();
+      Bundle args = new Bundle();
+      args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+      fragment.setArguments(args);
+
+      FragmentManager fragmentManager = getFragmentManager();
+      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+    } else {
+
+      Fragment fragment = new DrawerFragment(mDrawerAdapter);
+      Bundle args = new Bundle();
+      args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+      fragment.setArguments(args);
+
+      FragmentManager fragmentManager = getFragmentManager();
+      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+    }
+    // update selected item and title, then close the drawer
+    mDrawerList.setItemChecked(position, true);
+    DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+    if (drawerItem != null)
+      setTitle(drawerItem.title);
+    mDrawerLayout.closeDrawer(mDrawerList);
+  }
 
 //  @Override
 //  public void setTitle(CharSequence title) {
@@ -276,30 +308,30 @@ public class MainActivity extends ActionBarActivity {
   /**
    * Fragment that appears in the "content_frame", shows a planet
    */
-//  public static class DrawerFragment extends Fragment {
-//    public static final String ARG_DRAWER_NUMBER = "drawer_number";
-//    private DrawerAdapter mDrawerAdapter;
-//
-//    public DrawerFragment(DrawerAdapter drawerAdapter) {
-//      // Empty constructor required for fragment subclasses
-//      mDrawerAdapter = drawerAdapter;
-//    }
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//      View rootView = inflater.inflate(R.layout.fragment_drawer, container, false);
-//      int position = getArguments().getInt(ARG_DRAWER_NUMBER);
-//
-//      DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-//      if (drawerItem != null)
-//      {
-//        String planet = drawerItem.title;
-//        int imageId = drawerItem.resourceId;
-//        ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
-//        getActivity().setTitle(planet);
-//      }
-//      return rootView;
-//    }
-//  }
+  public static class DrawerFragment extends Fragment {
+    public static final String ARG_DRAWER_NUMBER = "drawer_number";
+    private DrawerAdapter mDrawerAdapter;
+
+    public DrawerFragment(DrawerAdapter drawerAdapter) {
+      // Empty constructor required for fragment subclasses
+      mDrawerAdapter = drawerAdapter;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+      View rootView = inflater.inflate(R.layout.fragment_drawer, container, false);
+      int position = getArguments().getInt(ARG_DRAWER_NUMBER);
+
+      DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+      if (drawerItem != null)
+      {
+        String planet = drawerItem.title;
+        int imageId = drawerItem.resourceId;
+        ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+        getActivity().setTitle(planet);
+      }
+      return rootView;
+    }
+  }
 }
