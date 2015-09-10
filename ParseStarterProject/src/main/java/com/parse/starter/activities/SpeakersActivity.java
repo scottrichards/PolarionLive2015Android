@@ -1,6 +1,7 @@
 package com.parse.starter.activities;
 
-import android.support.v7.app.ActionBarActivity;
+// import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SpeakersActivity extends ActionBarActivity {
+public class SpeakersActivity extends Activity {
     private SpeakersAdapter mAdapter;
 
     @Override

@@ -1,6 +1,7 @@
 package com.parse.starter.activities;
 
-import android.support.v7.app.ActionBarActivity;
+// import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,7 +9,7 @@ import android.webkit.WebView;
 
 import com.parse.starter.R;
 
-public class WebActivity extends ActionBarActivity {
+public class WebActivity extends Activity {
 
     private WebView webView;
     @Override

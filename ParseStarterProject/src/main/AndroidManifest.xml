@@ -20,6 +20,7 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
 
     <application
         android:name=".StarterApplication"
@@ -36,7 +37,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,15 +47,22 @@
         </activity>
         <activity
             android:name=".activities.AgendaActivity"
-            android:label="@string/title_activity_agenda" >
+            android:label="@string/title_activity_agenda"
+            android:icon="@drawable/agenda"
+            >
+
         </activity>
         <activity
             android:name=".activities.SpeakersActivity"
-            android:label="@string/title_activity_speakers" >
+            android:label="@string/title_activity_speakers"
+            android:icon="@drawable/speaker"
+            >
         </activity>
         <activity
             android:name=".activities.LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:icon="@drawable/iconlogin"
+            >
         </activity>
         <activity
             android:name=".activities.RegisterActivity"
@@ -61,7 +70,9 @@
         </activity>
         <activity
             android:name=".activities.RaffleActivity"
-            android:label="@string/title_activity_raffle" >
+            android:label="@string/title_activity_raffle"
+            android:icon="@drawable/raffle"
+            >
         </activity>
         <activity
             android:name=".activities.WebActivity"
@@ -77,7 +88,9 @@
 
         <activity
             android:name=".activities.MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:label="@string/title_activity_maps"
+            android:icon="@drawable/map"
+            >
         </activity>
     </application>
 

@@ -1,9 +1,10 @@
 package com.parse.starter.activities;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +18,7 @@ import com.parse.starter.MainActivity;
 import com.parse.starter.R;
 import com.parse.starter.utility.URLService;
 
-public class RaffleActivity extends ActionBarActivity {
+public class RaffleActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

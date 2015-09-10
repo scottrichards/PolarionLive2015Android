@@ -1,7 +1,8 @@
 package com.parse.starter.activities;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +18,7 @@ import com.parse.ParseUser;
 import com.parse.starter.MainActivity;
 import com.parse.starter.R;
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends Activity {
     private EditText mUsernameField;
     private EditText mPasswordField;
     private TextView mErrorField;
