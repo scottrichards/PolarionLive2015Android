@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class AgendaActivity extends ActionBarActivity {
+public class AgendaActivity extends DrawerActionBarActivity {
     private AgendaAdapter mAdapter;
 
 
@@ -30,6 +30,8 @@ public class AgendaActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda);
+
+        setupActionBar();
 
         ParseObject.registerSubclass(AgendaItem.class);
 

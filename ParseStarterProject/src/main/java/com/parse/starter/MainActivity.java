@@ -169,7 +169,7 @@ public class MainActivity extends ActionBarActivity {
                   DrawerItem drawerItem = mDrawerAdapter.getItem(position);
                   if (drawerItem != null)
                     setTitle(drawerItem.title);
-     //             mDrawerLayout.closeDrawer(mDrawerList);
+                  mDrawerLayout.closeDrawer(mDrawerList);
                   Intent agendaIntent = new Intent(MainActivity.this,AgendaActivity.class);
                   startActivity(agendaIntent);
                   finish();
