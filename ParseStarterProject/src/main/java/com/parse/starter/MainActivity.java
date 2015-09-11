@@ -45,10 +45,12 @@ import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
 import com.parse.starter.fragments.SocialFragment;
+import com.parse.starter.fragments.WebFragment;
 import com.parse.starter.model.DrawerItem;
+import com.parse.starter.utility.URLService;
 
 
-public class MainActivity extends ActionBarActivity implements SocialFragment.OnFragmentInteractionListener {
+public class MainActivity extends ActionBarActivity implements SocialFragment.OnFragmentInteractionListener, WebFragment.OnFragmentInteractionListener {
 
   private DrawerLayout mDrawerLayout;
   private ListView mDrawerList;
@@ -219,10 +221,23 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
 //
   private void selectItem(int position) {
     // update the main content by replacing fragments
+    DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+//    if (mToolbar != null && drawerItem != null) {
+//      mToolbar.setTitle(drawerItem.title);
+//      setSupportActionBar(mToolbar);
+//    }
     if (position == 6) {
       SocialFragment fragment = new SocialFragment();
       Bundle args = new Bundle();
       args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+      fragment.setArguments(args);
+
+      FragmentManager fragmentManager = getFragmentManager();
+      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+    } else if (position == 3) {
+      WebFragment fragment = new WebFragment();
+      Bundle args = new Bundle();
+      args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
       fragment.setArguments(args);
 
       FragmentManager fragmentManager = getFragmentManager();
@@ -239,7 +254,7 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
     }
     // update selected item and title, then close the drawer
     mDrawerList.setItemChecked(position, true);
-    DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+
     if (drawerItem != null)
       setTitle(drawerItem.title);
     mDrawerLayout.closeDrawer(mDrawerList);
