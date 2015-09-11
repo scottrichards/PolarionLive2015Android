@@ -46,6 +46,7 @@ import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
 import com.parse.starter.fragments.HomeFragment;
+import com.parse.starter.fragments.LoginFragment;
 import com.parse.starter.fragments.RaffleFragment;
 import com.parse.starter.fragments.SocialFragment;
 import com.parse.starter.fragments.WebFragment;
@@ -56,7 +57,8 @@ import com.parse.starter.utility.URLService;
 public class MainActivity extends ActionBarActivity
                           implements SocialFragment.OnFragmentInteractionListener,
                                         WebFragment.OnFragmentInteractionListener,
-        RaffleFragment.OnFragmentInteractionListener
+                                      RaffleFragment.OnFragmentInteractionListener,
+                                      LoginFragment.OnFragmentInteractionListener
 {
 
   private DrawerLayout mDrawerLayout;
@@ -66,6 +68,7 @@ public class MainActivity extends ActionBarActivity
   private CharSequence mTitle;
   private CharSequence mDrawerTitle;
   private Toolbar mToolbar;
+  private int mPreviousPosition, mCurrentPosition;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -172,16 +175,39 @@ public class MainActivity extends ActionBarActivity
 
   @Override
   public void onFragmentInteraction(Uri uri) {
-    Log.d("MainActivity","onFragmentInteraction: " + uri);
+    Log.d("MainActivity", "onFragmentInteraction: " + uri);
   }
 
   @Override
   public void onEnterRaffle() {
-    Log.d("MainActivity","OnEnter Raffle");
-    HomeFragment fragment = new HomeFragment();
+    Log.d("MainActivity", "OnEnter Raffle");
+    popBackStack();
+  }
 
+  @Override
+  public void onSignIn() {
+    Log.d("MainActivity", "Signed In");
+    popBackStack();
+  }
+
+  @Override
+  public void onStartActivity(String className) {
+    Log.d("MainActivity", "StartActivity: " + className);
+    switch (className) {
+      case "RaffleActivity" : selectItem(3);
+          break;
+    }
+  }
+
+  // pop the last fragment of the stack and update the title
+  public void popBackStack()
+  {
     FragmentManager fragmentManager = getFragmentManager();
     fragmentManager.popBackStack();
+    DrawerItem drawerItem = mDrawerAdapter.getItem(mPreviousPosition);
+    if (mToolbar != null && drawerItem != null) {
+      mToolbar.setTitle(drawerItem.title);
+    }
   }
 
   /* The click listner for ListView in the navigation drawer */
@@ -236,45 +262,53 @@ public class MainActivity extends ActionBarActivity
 //
   private void selectItem(int position) {
     // update the main content by replacing fragments
+    mPreviousPosition = mCurrentPosition;
+    mCurrentPosition = position;
     DrawerItem drawerItem = mDrawerAdapter.getItem(position);
     if (mToolbar != null && drawerItem != null) {
       mToolbar.setTitle(drawerItem.title);
     }
-    if (position == 0) {
-      HomeFragment fragment = new HomeFragment();
+    FragmentManager fragmentManager = getFragmentManager();
+    Fragment fragment;
+    Bundle args;
+    switch (position) {
+      case 0 :
+         fragment = new HomeFragment();
 
-      FragmentManager fragmentManager = getFragmentManager();
-      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(HomeFragment.class.getSimpleName()).commit();
-    } else if (position == 6) {
-      SocialFragment fragment = new SocialFragment();
-      Bundle args = new Bundle();
-      args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
-      fragment.setArguments(args);
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(HomeFragment.class.getSimpleName()).commit();
+        break;
+      case 3 :
+        fragment = new WebFragment();
+        args = new Bundle();
+        args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
+        fragment.setArguments(args);
 
-      FragmentManager fragmentManager = getFragmentManager();
-      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-    } else if (position == 3) {
-      WebFragment fragment = new WebFragment();
-      Bundle args = new Bundle();
-      args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
-      fragment.setArguments(args);
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        break;
+      case 4 :
+        fragment = new RaffleFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
+        break;
+      case 5 :
+        fragment = new LoginFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LoginFragment.class.getSimpleName()).commit();
+        break;
 
-      FragmentManager fragmentManager = getFragmentManager();
-      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-    } else if (position == 4) {
-      RaffleFragment fragment = new RaffleFragment();
+      case 6 :
+        fragment = new SocialFragment();
+        args = new Bundle();
+        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+        fragment.setArguments(args);
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        break;
 
-      FragmentManager fragmentManager = getFragmentManager();
-      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
-    } else {
-
-      Fragment fragment = new DrawerFragment(mDrawerAdapter);
-      Bundle args = new Bundle();
-      args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
-      fragment.setArguments(args);
-
-      FragmentManager fragmentManager = getFragmentManager();
-      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+      default :
+        fragment = new DrawerFragment(mDrawerAdapter);
+        args = new Bundle();
+        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+        fragment.setArguments(args);
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        break;
     }
     // update selected item and title, then close the drawer
     mDrawerList.setItemChecked(position, true);
