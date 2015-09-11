@@ -45,6 +45,7 @@ import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
+import com.parse.starter.fragments.AgendaItemFragment;
 import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.fragments.LoginFragment;
 import com.parse.starter.fragments.RaffleFragment;
@@ -58,7 +59,8 @@ public class MainActivity extends ActionBarActivity
                           implements SocialFragment.OnFragmentInteractionListener,
                                         WebFragment.OnFragmentInteractionListener,
                                       RaffleFragment.OnFragmentInteractionListener,
-                                      LoginFragment.OnFragmentInteractionListener
+                                      LoginFragment.OnFragmentInteractionListener,
+        AgendaItemFragment.OnFragmentInteractionListener
 {
 
   private DrawerLayout mDrawerLayout;
@@ -199,6 +201,12 @@ public class MainActivity extends ActionBarActivity
     }
   }
 
+  @Override
+  public void onSelectItem(String id)
+  {
+    Log.d("MainActivity", "OnSelectItem - id: " + id);
+  }
+
   // pop the last fragment of the stack and update the title
   public void popBackStack()
   {
@@ -276,6 +284,10 @@ public class MainActivity extends ActionBarActivity
          fragment = new HomeFragment();
 
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(HomeFragment.class.getSimpleName()).commit();
+        break;
+      case 1 :
+        fragment = new AgendaItemFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaItemFragment.class.getSimpleName()).commit();
         break;
       case 3 :
         fragment = new WebFragment();
