@@ -20,6 +20,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 //import android.support.v4.view.GravityCompat;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -44,13 +45,19 @@ import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
+import com.parse.starter.fragments.HomeFragment;
+import com.parse.starter.fragments.RaffleFragment;
 import com.parse.starter.fragments.SocialFragment;
 import com.parse.starter.fragments.WebFragment;
 import com.parse.starter.model.DrawerItem;
 import com.parse.starter.utility.URLService;
 
 
-public class MainActivity extends ActionBarActivity implements SocialFragment.OnFragmentInteractionListener, WebFragment.OnFragmentInteractionListener {
+public class MainActivity extends ActionBarActivity
+                          implements SocialFragment.OnFragmentInteractionListener,
+                                        WebFragment.OnFragmentInteractionListener,
+        RaffleFragment.OnFragmentInteractionListener
+{
 
   private DrawerLayout mDrawerLayout;
   private ListView mDrawerList;
@@ -115,10 +122,9 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
 //    };
 //    mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-//    if (savedInstanceState == null) {
-//      selectItem(0);
-//    }
-
+    if (savedInstanceState == null) {
+      selectItem(0);
+    }
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
   }
 
@@ -167,6 +173,15 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
   @Override
   public void onFragmentInteraction(Uri uri) {
     Log.d("MainActivity","onFragmentInteraction: " + uri);
+  }
+
+  @Override
+  public void onEnterRaffle() {
+    Log.d("MainActivity","OnEnter Raffle");
+    HomeFragment fragment = new HomeFragment();
+
+    FragmentManager fragmentManager = getFragmentManager();
+    fragmentManager.popBackStack();
   }
 
   /* The click listner for ListView in the navigation drawer */
@@ -222,11 +237,15 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
   private void selectItem(int position) {
     // update the main content by replacing fragments
     DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-//    if (mToolbar != null && drawerItem != null) {
-//      mToolbar.setTitle(drawerItem.title);
-//      setSupportActionBar(mToolbar);
-//    }
-    if (position == 6) {
+    if (mToolbar != null && drawerItem != null) {
+      mToolbar.setTitle(drawerItem.title);
+    }
+    if (position == 0) {
+      HomeFragment fragment = new HomeFragment();
+
+      FragmentManager fragmentManager = getFragmentManager();
+      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(HomeFragment.class.getSimpleName()).commit();
+    } else if (position == 6) {
       SocialFragment fragment = new SocialFragment();
       Bundle args = new Bundle();
       args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
@@ -242,6 +261,11 @@ public class MainActivity extends ActionBarActivity implements SocialFragment.On
 
       FragmentManager fragmentManager = getFragmentManager();
       fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+    } else if (position == 4) {
+      RaffleFragment fragment = new RaffleFragment();
+
+      FragmentManager fragmentManager = getFragmentManager();
+      fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
     } else {
 
       Fragment fragment = new DrawerFragment(mDrawerAdapter);
