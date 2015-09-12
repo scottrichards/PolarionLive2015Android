@@ -107,7 +107,7 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_agendaitem, container, false);
+        View view = inflater.inflate(R.layout.fragment_agenda, container, false);
 
         // Set the adapter
         mListView = (AbsListView) view.findViewById(android.R.id.list);
