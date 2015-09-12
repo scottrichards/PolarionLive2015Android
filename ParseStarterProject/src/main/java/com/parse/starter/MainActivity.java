@@ -50,6 +50,7 @@ import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.fragments.LocationFragment;
 import com.parse.starter.fragments.LoginFragment;
 import com.parse.starter.fragments.RaffleFragment;
+import com.parse.starter.fragments.SignupFragment;
 import com.parse.starter.fragments.SocialFragment;
 import com.parse.starter.fragments.SpeakerItemFragment;
 import com.parse.starter.fragments.WebFragment;
@@ -63,7 +64,8 @@ public class MainActivity extends ActionBarActivity
                                       RaffleFragment.OnFragmentInteractionListener,
                                       LoginFragment.OnFragmentInteractionListener,
         AgendaItemFragment.OnFragmentInteractionListener,
-        SpeakerItemFragment.OnFragmentInteractionListener
+        SpeakerItemFragment.OnFragmentInteractionListener,
+        SignupFragment.OnFragmentInteractionListener
 {
 
   private DrawerLayout mDrawerLayout;
@@ -203,6 +205,13 @@ public class MainActivity extends ActionBarActivity
     switch (className) {
       case "RaffleActivity" : selectItem(3);
           break;
+      case "SignupFragment" :
+          if (mToolbar != null) {
+            mToolbar.setTitle("Sign Up");
+          }
+          Fragment fragment = new SignupFragment();
+          mFragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+          break;
     }
   }
 
@@ -217,6 +226,12 @@ public class MainActivity extends ActionBarActivity
   {
     Log.d("MainActivity", "OnSelectSpeaker - id: " + id);
 
+  }
+
+  @Override
+  public void onSignup() {
+    Log.d("MainActivity", "onSignUp " );
+    selectItem(5);
   }
 
   // pop the last fragment of the stack and update the title
@@ -383,30 +398,7 @@ public class MainActivity extends ActionBarActivity
     mDrawerToggle.onConfigurationChanged(newConfig);
   }
 
-  public void onAgenda(View view) {
-    Intent agendaIntent = new Intent(MainActivity.this,AgendaActivity.class);
-    startActivity(agendaIntent);
-  }
 
-  public void onSpeakers(View view) {
-    Intent speakersIntent = new Intent(MainActivity.this,SpeakersActivity.class);
-    startActivity(speakersIntent);
-  }
-
-  public void onLogin(View view) {
-    Intent loginIntent = new Intent(MainActivity.this,LoginActivity.class);
-    startActivity(loginIntent);
-  }
-
-  public void onRaffle(View view) {
-    Intent raffleIntent = new Intent(MainActivity.this,RaffleActivity.class);
-    startActivity(raffleIntent);
-  }
-
-  public void onMap(View view) {
-    Intent mapIntent = new Intent(MainActivity.this,MapsActivity.class);
-    startActivity(mapIntent);
-  }
 
   /**
    * Fragment that appears in the "content_frame", shows a planet

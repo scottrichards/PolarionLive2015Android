@@ -174,6 +174,16 @@ public class LoginFragment extends Fragment {
             }
         });
 
+        Button signupButton = (Button)mView.findViewById(R.id.registerButton);
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mListener != null) {
+                    mListener.onStartActivity(SignupFragment.class.getSimpleName());
+                }
+            }
+        });
+
         return mView;
     }
 
