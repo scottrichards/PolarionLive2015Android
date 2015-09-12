@@ -7,8 +7,17 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.starter.R;
+import com.parse.starter.adapters.SpeakersAdapter;
 import com.parse.starter.fragments.dummy.DummyContent;
+import com.parse.starter.model.Speaker;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
@@ -18,6 +27,7 @@ import com.parse.starter.fragments.dummy.DummyContent;
  * interface.
  */
 public class SpeakerItemFragment extends ListFragment {
+    private SpeakersAdapter mSpeakersAdapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,12 +65,34 @@ public class SpeakerItemFragment extends ListFragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        ParseObject.registerSubclass(Speaker.class);
 
+        mSpeakersAdapter = new SpeakersAdapter(getActivity(), new ArrayList<Speaker>());
         // TODO: Change Adapter to display your content
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
+//        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+//                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
+
+
+        setListAdapter(new ArrayAdapter<Speaker>(getActivity(),
+                        android.R.layout.simple_list_item_1, android.R.id.text1, mSpeakersAdapter.mSpeakers));
+        updateData();
     }
 
+    public void updateData(){
+        ParseQuery<Speaker> query = ParseQuery.getQuery(Speaker.class);
+        query.findInBackground(new FindCallback<Speaker>() {
+            @Override
+            public void done(List<Speaker> speakers, ParseException error) {
+                if (speakers != null) {
+                    mSpeakersAdapter.clear();
+                    for (int i = 0; i < speakers.size(); i++) {
+                        mSpeakersAdapter.add(speakers.get(i));
+                    }
+                    mSpeakersAdapter.notifyDataSetChanged();
+                }
+            }
+        });
+    }
 
     @Override
     public void onAttach(Activity activity) {

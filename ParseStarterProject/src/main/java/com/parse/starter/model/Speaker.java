@@ -42,4 +42,9 @@ public class Speaker extends ParseObject {
     public void setBio(String bio){
         put("bio", bio);
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

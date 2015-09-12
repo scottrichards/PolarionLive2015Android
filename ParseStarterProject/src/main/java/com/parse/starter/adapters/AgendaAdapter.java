@@ -30,7 +30,8 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
         this.mAgendaItems = objects;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
 
         if(convertView == null){
             LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);

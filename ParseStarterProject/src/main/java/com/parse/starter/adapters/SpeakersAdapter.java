@@ -28,7 +28,7 @@ import java.util.Map;
  */
 public class SpeakersAdapter extends ArrayAdapter<Speaker> {
     private Context mContext;
-    private List<Speaker> mSpeakers;
+    public List<Speaker> mSpeakers;
     View mConvertView;
     HashMap<String,ImageCache> mMapTable;
 
@@ -100,5 +100,10 @@ public class SpeakersAdapter extends ArrayAdapter<Speaker> {
         }
 
         return convertView;
+    }
+
+    @Override
+    public int getCount() {
+        return mSpeakers.size();
     }
 }

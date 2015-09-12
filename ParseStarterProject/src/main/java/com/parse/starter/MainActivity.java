@@ -47,6 +47,7 @@ import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
 import com.parse.starter.fragments.AgendaItemFragment;
 import com.parse.starter.fragments.HomeFragment;
+import com.parse.starter.fragments.LocationFragment;
 import com.parse.starter.fragments.LoginFragment;
 import com.parse.starter.fragments.RaffleFragment;
 import com.parse.starter.fragments.SocialFragment;
@@ -73,6 +74,7 @@ public class MainActivity extends ActionBarActivity
   private CharSequence mDrawerTitle;
   private Toolbar mToolbar;
   private int mPreviousPosition, mCurrentPosition;
+  public static FragmentManager mFragmentManager;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +134,7 @@ public class MainActivity extends ActionBarActivity
     if (savedInstanceState == null) {
       selectItem(0);
     }
+    mFragmentManager = getFragmentManager();
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
   }
 
@@ -303,12 +306,14 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(SpeakerItemFragment.class.getSimpleName()).commit();
         break;
       case 3 :
-        fragment = new WebFragment();
-        args = new Bundle();
-        args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
-        fragment.setArguments(args);
-
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+//        fragment = new WebFragment();
+//        args = new Bundle();
+//        args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
+//        fragment.setArguments(args);
+//
+//        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        fragment = new LocationFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
       case 4 :
         fragment = new RaffleFragment();
