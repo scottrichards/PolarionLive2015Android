@@ -1,6 +1,7 @@
 package com.parse.starter.fragments;
 
 import android.app.Activity;
+import android.app.ListFragment;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,8 +13,16 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
 import com.parse.starter.R;
+import com.parse.starter.adapters.AgendaAdapter;
 import com.parse.starter.fragments.dummy.DummyContent;
+import com.parse.starter.model.AgendaItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
@@ -24,7 +33,7 @@ import com.parse.starter.fragments.dummy.DummyContent;
  * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
  * interface.
  */
-public class AgendaItemFragment extends Fragment implements AbsListView.OnItemClickListener {
+public class AgendaItemFragment extends ListFragment implements AbsListView.OnItemClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,7 +55,7 @@ public class AgendaItemFragment extends Fragment implements AbsListView.OnItemCl
      * The Adapter which will be used to populate the ListView/GridView with
      * Views.
      */
-    private ListAdapter mAdapter;
+    private AgendaAdapter mAdapter;
 
     // TODO: Rename and change types of parameters
     public static AgendaItemFragment newInstance(String param1, String param2) {
@@ -74,9 +83,27 @@ public class AgendaItemFragment extends Fragment implements AbsListView.OnItemCl
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        // TODO: Change Adapter to display your content
-        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
+//        // TODO: Change Adapter to display your content
+//        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+//                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
+        mAdapter = new AgendaAdapter(getActivity(), new ArrayList<AgendaItem>());
+        updateData();
+    }
+
+    public void updateData(){
+        ParseQuery<AgendaItem> query = ParseQuery.getQuery(AgendaItem.class);
+//        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
+        query.findInBackground(new FindCallback<AgendaItem>() {
+            @Override
+            public void done(List<AgendaItem> agendaItems, ParseException error) {
+                if (agendaItems != null) {
+                    mAdapter.clear();
+                    for (int i = 0; i < agendaItems.size(); i++) {
+                        mAdapter.add(agendaItems.get(i));
+                    }
+                }
+            }
+        });
     }
 
     @Override

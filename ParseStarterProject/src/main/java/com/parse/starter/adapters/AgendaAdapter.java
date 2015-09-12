@@ -31,42 +31,47 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
+
         if(convertView == null){
             LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);
             convertView = mLayoutInflater.inflate(R.layout.agenda_row_item, null);
         }
-
-        AgendaItem agendaItem = mAgendaItems.get(position);
-
-        TextView sessionNameView = (TextView) convertView.findViewById(R.id.sessionName);
-        sessionNameView.setText(agendaItem.getSessionName());
-
-        TextView displayTimeView = (TextView) convertView.findViewById(R.id.displayTime);
-        displayTimeView.setText(agendaItem.getDisplayTime());
-
-        TextView locationView = (TextView) convertView.findViewById(R.id.locationPlace);
-        locationView.setText(agendaItem.getLocation());
-
-        String iconName = agendaItem.getIcon();
-        ImageView iconView = (ImageView) convertView.findViewById(R.id.iconView);
-        if (iconName !=null && iconName.length() > 0) {
-//            Log.d("agendaItem", "Icon Name: " + iconName);
-            if (iconName.equals("coffee")) {
-                iconView.setImageResource(R.drawable.coffee_75);
-            } else if (iconName.equals("cocktail")) {
-                iconView.setImageResource(R.drawable.beer_50);
-            } else if (iconName.equals("trophy")) {
-                iconView.setImageResource(R.drawable.trophy_50);
-            } else if (iconName.equals("food")) {
-                iconView.setImageResource(R.drawable.fork_75);
-            } else if (iconName.equals("key")) {
-                iconView.setImageResource(R.drawable.key_filled_50);
-            } else if (iconName.equals("expert")) {
-                iconView.setImageResource(R.drawable.collaboration_50);
-            }
-        } else {
-            iconView.setImageBitmap(null);
+        AgendaItem agendaItem = null;
+        if (position < mAgendaItems.size())
+            agendaItem = mAgendaItems.get(position);
+        if (agendaItem == null) {
+            return convertView;
         }
+
+//        TextView sessionNameView = (TextView) convertView.findViewById(R.id.sessionName);
+//        sessionNameView.setText(agendaItem.getSessionName());
+//
+//        TextView displayTimeView = (TextView) convertView.findViewById(R.id.displayTime);
+//        displayTimeView.setText(agendaItem.getDisplayTime());
+//
+//        TextView locationView = (TextView) convertView.findViewById(R.id.locationPlace);
+//        locationView.setText(agendaItem.getLocation());
+//
+//        String iconName = agendaItem.getIcon();
+//        ImageView iconView = (ImageView) convertView.findViewById(R.id.iconView);
+//        if (iconName !=null && iconName.length() > 0) {
+////            Log.d("agendaItem", "Icon Name: " + iconName);
+//            if (iconName.equals("coffee")) {
+//                iconView.setImageResource(R.drawable.coffee_75);
+//            } else if (iconName.equals("cocktail")) {
+//                iconView.setImageResource(R.drawable.beer_50);
+//            } else if (iconName.equals("trophy")) {
+//                iconView.setImageResource(R.drawable.trophy_50);
+//            } else if (iconName.equals("food")) {
+//                iconView.setImageResource(R.drawable.fork_75);
+//            } else if (iconName.equals("key")) {
+//                iconView.setImageResource(R.drawable.key_filled_50);
+//            } else if (iconName.equals("expert")) {
+//                iconView.setImageResource(R.drawable.collaboration_50);
+//            }
+//        } else {
+//            iconView.setImageBitmap(null);
+//        }
         return convertView;
     }
 }
