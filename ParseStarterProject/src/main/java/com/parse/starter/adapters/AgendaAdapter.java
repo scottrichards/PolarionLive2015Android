@@ -25,7 +25,7 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
     private List<AgendaItem> mAgendaItems;
 
     public AgendaAdapter(Context context, List<AgendaItem> objects) {
-        super(context, R.layout.agenda_item, objects);
+        super(context, R.layout.agenda_row_item, objects);
         this.mContext = context;
         this.mAgendaItems = objects;
     }
@@ -35,25 +35,26 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
 
         if(convertView == null){
             LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);
-            convertView = mLayoutInflater.inflate(R.layout.agenda_item, parent, false);
+            convertView = mLayoutInflater.inflate(R.layout.agenda_row_item, parent, false);
         }
 
         if (position < mAgendaItems.size()) {
             Log.d("AgendaAdapter","getting item " + position + " of " + mAgendaItems.size());
             AgendaItem agendaItem = mAgendaItems.get(position);
 
-            TextView sessionNameView = (TextView) convertView.findViewById(R.id.textView5);
+            TextView sessionNameView = (TextView) convertView.findViewById(R.id.sessionName);
             sessionNameView.setText(agendaItem.getSessionName());
 
+            TextView displayTimeView = (TextView) convertView.findViewById(R.id.displayTime);
+            displayTimeView.setText(agendaItem.getDisplayTime());
+
+            TextView locationView = (TextView) convertView.findViewById(R.id.locationPlace);
+            locationView.setText(agendaItem.getLocation());
         }
 
 
-//
-//        TextView displayTimeView = (TextView) convertView.findViewById(R.id.displayTime);
-//        displayTimeView.setText(agendaItem.getDisplayTime());
-//
-//        TextView locationView = (TextView) convertView.findViewById(R.id.locationPlace);
-//        locationView.setText(agendaItem.getLocation());
+
+
 //
 //        String iconName = agendaItem.getIcon();
 //        ImageView iconView = (ImageView) convertView.findViewById(R.id.iconView);

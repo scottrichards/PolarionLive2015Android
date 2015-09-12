@@ -23,15 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0097009-bfb6-41e3-8e18-8f182f1fe723" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SessionItemFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/AgendaAdapter.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/AgendaAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SpeakerItemFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SpeakerItemFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -64,7 +60,7 @@
       <file leaf-file-name="AgendaItemFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33217993">
+            <state vertical-scroll-proportion="2.3096886">
               <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
@@ -123,6 +119,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="agenda_row_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.034483">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="agenda_item.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_item.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,69 +142,6 @@
           </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/ListView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1802" column="0" selection-start-line="1802" selection-start-column="0" selection-end-line="1802" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#153217#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#4690#4691#0" expanded="false" />
-                <element signature="e#4725#4726#0" expanded="false" />
-                <element signature="e#6942#6943#0" expanded="false" />
-                <element signature="e#7009#7010#0" expanded="false" />
-                <element signature="e#11036#11037#0" expanded="false" />
-                <element signature="e#11080#11081#0" expanded="false" />
-                <element signature="e#11134#11135#0" expanded="false" />
-                <element signature="e#11180#11181#0" expanded="false" />
-                <element signature="e#14611#14612#0" expanded="false" />
-                <element signature="e#14655#14656#0" expanded="false" />
-                <element signature="e#14709#14710#0" expanded="false" />
-                <element signature="e#14755#14756#0" expanded="false" />
-                <element signature="e#15857#15858#0" expanded="false" />
-                <element signature="e#15888#15889#0" expanded="false" />
-                <element signature="e#16239#16240#0" expanded="false" />
-                <element signature="e#16290#16291#0" expanded="false" />
-                <element signature="e#33437#33438#0" expanded="false" />
-                <element signature="e#33491#33492#0" expanded="false" />
-                <element signature="e#33819#33820#0" expanded="false" />
-                <element signature="e#33869#33870#0" expanded="false" />
-                <element signature="e#41295#41296#0" expanded="false" />
-                <element signature="e#41363#41364#0" expanded="false" />
-                <element signature="e#45372#45373#0" expanded="false" />
-                <element signature="e#45399#45400#0" expanded="false" />
-                <element signature="e#77882#77883#0" expanded="false" />
-                <element signature="e#77941#77942#0" expanded="false" />
-                <element signature="e#78350#78351#0" expanded="false" />
-                <element signature="e#78398#78399#0" expanded="false" />
-                <element signature="e#83466#83467#0" expanded="false" />
-                <element signature="e#83517#83518#0" expanded="false" />
-                <element signature="e#83747#83748#0" expanded="false" />
-                <element signature="e#83798#83799#0" expanded="false" />
-                <element signature="e#110803#110804#0" expanded="false" />
-                <element signature="e#110851#110852#0" expanded="false" />
-                <element signature="e#110893#110894#0" expanded="false" />
-                <element signature="e#110939#110940#0" expanded="false" />
-                <element signature="e#124574#124575#0" expanded="false" />
-                <element signature="e#124611#124612#0" expanded="false" />
-                <element signature="e#136445#136446#0" expanded="false" />
-                <element signature="e#136476#136477#0" expanded="false" />
-                <element signature="e#137247#137248#0" expanded="false" />
-                <element signature="e#137284#137285#0" expanded="false" />
-                <element signature="e#138360#138361#0" expanded="false" />
-                <element signature="e#138405#138406#0" expanded="false" />
-                <element signature="e#139075#139076#0" expanded="false" />
-                <element signature="e#139120#139121#0" expanded="false" />
-                <element signature="e#139633#139634#0" expanded="false" />
-                <element signature="e#139673#139674#0" expanded="false" />
-                <element signature="e#140214#140215#0" expanded="false" />
-                <element signature="e#140254#140255#0" expanded="false" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -3182,7 +3128,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442075364140</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Agenda is starting to work">
+      <created>1442082430357</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1442082430357</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3240,7 +3192,8 @@
     <MESSAGE value="Working on AgendaItem View Dummy Data" />
     <MESSAGE value="Trying to fix crash in AgendaItems" />
     <MESSAGE value="Got Map Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got Map Working" />
+    <MESSAGE value="Agenda is starting to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agenda is starting to work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4055,16 +4008,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.965517">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/drawer_row_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4408,6 +4351,17 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.034483">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/AgendaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4418,7 +4372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33217993">
+        <state vertical-scroll-proportion="2.3096886">
           <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
