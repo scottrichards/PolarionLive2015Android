@@ -215,6 +215,16 @@ public class MainActivity extends ActionBarActivity
     }
   }
 
+  // invoked from the SignupFragment
+  @Override
+  public void signupOnStartActivity(String className) {
+    Log.d("MainActivity", "StartActivity: " + className);
+    switch (className) {
+      case "LoginFragment" : selectItem(5);
+        break;
+    }
+  }
+
   @Override
   public void onSelectItem(String id)
   {

@@ -99,6 +99,14 @@ public class SignupFragment extends Fragment {
                 register(v);
             }
         });
+
+        Button onLoginButton = (Button)mView.findViewById(R.id.signInButton);
+        onLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.signupOnStartActivity(LoginFragment.class.getSimpleName());
+            }
+        });
         return mView;
     }
 
@@ -131,6 +139,7 @@ public class SignupFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         public void onSignup();
+        public void signupOnStartActivity(String activity);
     }
 
     public void register(final View v){
