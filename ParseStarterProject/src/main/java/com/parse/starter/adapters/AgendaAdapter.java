@@ -50,32 +50,29 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
 
             TextView locationView = (TextView) convertView.findViewById(R.id.locationPlace);
             locationView.setText(agendaItem.getLocation());
+
+            String iconName = agendaItem.getIcon();
+            ImageView iconView = (ImageView) convertView.findViewById(R.id.iconView);
+            if (iconName !=null && iconName.length() > 0) {
+//            Log.d("agendaItem", "Icon Name: " + iconName);
+                if (iconName.equals("coffee")) {
+                    iconView.setImageResource(R.drawable.coffee_75);
+                } else if (iconName.equals("cocktail")) {
+                    iconView.setImageResource(R.drawable.beer_50);
+                } else if (iconName.equals("trophy")) {
+                    iconView.setImageResource(R.drawable.trophy_50);
+                } else if (iconName.equals("food")) {
+                    iconView.setImageResource(R.drawable.fork_75);
+                } else if (iconName.equals("key")) {
+                    iconView.setImageResource(R.drawable.key_filled_50);
+                } else if (iconName.equals("expert")) {
+                    iconView.setImageResource(R.drawable.collaboration_50);
+                }
+            } else {
+                iconView.setImageBitmap(null);
+            }
         }
 
-
-
-
-//
-//        String iconName = agendaItem.getIcon();
-//        ImageView iconView = (ImageView) convertView.findViewById(R.id.iconView);
-//        if (iconName !=null && iconName.length() > 0) {
-////            Log.d("agendaItem", "Icon Name: " + iconName);
-//            if (iconName.equals("coffee")) {
-//                iconView.setImageResource(R.drawable.coffee_75);
-//            } else if (iconName.equals("cocktail")) {
-//                iconView.setImageResource(R.drawable.beer_50);
-//            } else if (iconName.equals("trophy")) {
-//                iconView.setImageResource(R.drawable.trophy_50);
-//            } else if (iconName.equals("food")) {
-//                iconView.setImageResource(R.drawable.fork_75);
-//            } else if (iconName.equals("key")) {
-//                iconView.setImageResource(R.drawable.key_filled_50);
-//            } else if (iconName.equals("expert")) {
-//                iconView.setImageResource(R.drawable.collaboration_50);
-//            }
-//        } else {
-//            iconView.setImageBitmap(null);
-//        }
         return convertView;
     }
 }

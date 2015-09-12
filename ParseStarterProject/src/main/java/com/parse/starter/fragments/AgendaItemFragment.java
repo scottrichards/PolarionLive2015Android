@@ -19,7 +19,6 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.starter.R;
 import com.parse.starter.adapters.AgendaAdapter;
-import com.parse.starter.fragments.dummy.DummyContent;
 import com.parse.starter.model.AgendaItem;
 import com.parse.starter.model.Speaker;
 
@@ -85,9 +84,6 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         ParseObject.registerSubclass(AgendaItem.class);
-//        // TODO: Change Adapter to display your content
-//        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-//                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
         mAdapter = new AgendaAdapter(getActivity(), new ArrayList<AgendaItem>());
         updateData();
     }
@@ -151,7 +147,7 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-            mListener.onSelectItem(DummyContent.ITEMS.get(position).id);
+//            mListener.onSelectItem(DummyContent.ITEMS.get(position).id);
         }
     }
 

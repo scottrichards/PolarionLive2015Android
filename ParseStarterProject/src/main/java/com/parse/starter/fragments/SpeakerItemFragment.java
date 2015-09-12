@@ -3,7 +3,10 @@ package com.parse.starter.fragments;
 import android.app.Activity;
 import android.os.Bundle;
 import android.app.ListFragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -12,6 +15,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.starter.R;
+import com.parse.starter.adapters.AgendaAdapter;
 import com.parse.starter.adapters.SpeakersAdapter;
 import com.parse.starter.fragments.dummy.DummyContent;
 import com.parse.starter.model.Speaker;
@@ -28,6 +32,14 @@ import java.util.List;
  */
 public class SpeakerItemFragment extends ListFragment {
     private SpeakersAdapter mSpeakersAdapter;
+    /**
+     * The fragment's ListView/GridView.
+     */
+    private AbsListView mListView;
+    /**
+     * The Adapter which will be used to populate the ListView/GridView with
+     * Views.
+     */
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,6 +51,7 @@ public class SpeakerItemFragment extends ListFragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
 
     // TODO: Rename and change types of parameters
     public static SpeakerItemFragment newInstance(String param1, String param2) {
@@ -69,13 +82,24 @@ public class SpeakerItemFragment extends ListFragment {
 
         mSpeakersAdapter = new SpeakersAdapter(getActivity(), new ArrayList<Speaker>());
         // TODO: Change Adapter to display your content
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
+//        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+//                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
 
 
 //        setListAdapter(new ArrayAdapter<Speaker>(getActivity(),
 //                        android.R.layout.simple_list_item_1, android.R.id.text1, mSpeakersAdapter.mSpeakers));
         updateData();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_agendaitem, container, false);
+
+        // Set the adapter
+        mListView = (AbsListView) view.findViewById(android.R.id.list);
+
+        return view;
     }
 
     public void updateData(){
@@ -103,6 +127,13 @@ public class SpeakerItemFragment extends ListFragment {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        mListView.setAdapter(mSpeakersAdapter);
     }
 
     @Override
