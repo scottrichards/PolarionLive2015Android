@@ -69,12 +69,12 @@ public class SpeakerItemFragment extends ListFragment {
 
         mSpeakersAdapter = new SpeakersAdapter(getActivity(), new ArrayList<Speaker>());
         // TODO: Change Adapter to display your content
-//        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-//                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
+        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS));
 
 
-        setListAdapter(new ArrayAdapter<Speaker>(getActivity(),
-                        android.R.layout.simple_list_item_1, android.R.id.text1, mSpeakersAdapter.mSpeakers));
+//        setListAdapter(new ArrayAdapter<Speaker>(getActivity(),
+//                        android.R.layout.simple_list_item_1, android.R.id.text1, mSpeakersAdapter.mSpeakers));
         updateData();
     }
 

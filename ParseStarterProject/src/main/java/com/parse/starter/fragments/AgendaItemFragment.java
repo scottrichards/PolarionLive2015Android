@@ -15,11 +15,13 @@ import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.starter.R;
 import com.parse.starter.adapters.AgendaAdapter;
 import com.parse.starter.fragments.dummy.DummyContent;
 import com.parse.starter.model.AgendaItem;
+import com.parse.starter.model.Speaker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,7 +84,7 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
+        ParseObject.registerSubclass(AgendaItem.class);
 //        // TODO: Change Adapter to display your content
 //        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
 //                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
@@ -113,12 +115,18 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
 
         // Set the adapter
         mListView = (AbsListView) view.findViewById(android.R.id.list);
-        ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
 
         // Set OnItemClickListener so we can be notified on item clicks
         mListView.setOnItemClickListener(this);
 
         return view;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        mListView.setAdapter(mAdapter);
     }
 
     @Override
