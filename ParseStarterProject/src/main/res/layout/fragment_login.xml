@@ -19,26 +19,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/red" />
+            android:textColor="@color/red"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/username" />
+            android:layout_marginLeft="10dp"
+            android:text="Username:"
+            />
 
         <EditText
             android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
-
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            >
             <requestFocus />
         </EditText>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:text="@string/password_label" />
 
         <EditText
@@ -46,7 +55,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
 
         <Button
             android:id="@+id/sign_in"
@@ -60,7 +71,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="showRegistration"
-            android:text="@string/dont_have_an_account_label" />
+            android:text="@string/dont_have_an_account_label"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
 
     </LinearLayout>

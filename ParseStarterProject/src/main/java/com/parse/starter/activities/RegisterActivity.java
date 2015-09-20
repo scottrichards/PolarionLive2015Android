@@ -38,7 +38,6 @@ public class RegisterActivity extends Activity {
         mTitleField = (EditText) findViewById(R.id.title);
         mErrorField = (TextView) findViewById(R.id.error_messages);
         mFullNameField = (EditText) findViewById(R.id.fullName);
-
     }
 
     @Override

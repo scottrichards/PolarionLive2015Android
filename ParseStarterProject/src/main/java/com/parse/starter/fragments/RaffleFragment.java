@@ -96,8 +96,6 @@ public class RaffleFragment extends Fragment {
                     if (mListener != null) {
                         mListener.onEnterRaffle();
                     }
-//            Intent intent = new Intent(this, MainActivity.class);
-//            startActivity(intent);
                 }
             }
         });

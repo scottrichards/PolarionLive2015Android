@@ -14,8 +14,6 @@ import com.parse.starter.model.AgendaItem;
 
 import java.util.List;
 
-import bolts.Task;
-
 /**
  * Created by scottrichards on 9/4/15.
  */
@@ -30,6 +28,14 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
         this.mAgendaItems = objects;
     }
 
+    public AgendaItem getItem(int position)
+    {
+        if (position < mAgendaItems.size())
+            return mAgendaItems.get(position);
+        else
+            return null;
+    }
+
     public View getView(int position, View convertView, ViewGroup parent)
     {
 
@@ -42,7 +48,7 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
             Log.d("AgendaAdapter","getting item " + position + " of " + mAgendaItems.size());
             AgendaItem agendaItem = mAgendaItems.get(position);
 
-            TextView sessionNameView = (TextView) convertView.findViewById(R.id.sessionName);
+            TextView sessionNameView = (TextView) convertView.findViewById(R.id.time);
             sessionNameView.setText(agendaItem.getSessionName());
 
             TextView displayTimeView = (TextView) convertView.findViewById(R.id.displayTime);

@@ -39,12 +39,14 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.parse.ParseAnalytics;
+import com.parse.ParseUser;
 import com.parse.starter.activities.AgendaActivity;
 import com.parse.starter.activities.LoginActivity;
 import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
 import com.parse.starter.adapters.DrawerAdapter;
+import com.parse.starter.fragments.AgendaDetailFragment;
 import com.parse.starter.fragments.AgendaItemFragment;
 import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.fragments.LocationFragment;
@@ -54,6 +56,7 @@ import com.parse.starter.fragments.SignupFragment;
 import com.parse.starter.fragments.SocialFragment;
 import com.parse.starter.fragments.SpeakerItemFragment;
 import com.parse.starter.fragments.WebFragment;
+import com.parse.starter.model.AgendaItem;
 import com.parse.starter.model.DrawerItem;
 import com.parse.starter.utility.URLService;
 
@@ -65,7 +68,8 @@ public class MainActivity extends ActionBarActivity
                                       LoginFragment.OnFragmentInteractionListener,
         AgendaItemFragment.OnFragmentInteractionListener,
         SpeakerItemFragment.OnFragmentInteractionListener,
-        SignupFragment.OnFragmentInteractionListener
+        SignupFragment.OnFragmentInteractionListener,
+        HomeFragment.OnFragmentInteractionListener
 {
 
   private DrawerLayout mDrawerLayout;
@@ -160,27 +164,27 @@ public class MainActivity extends ActionBarActivity
     mDrawerLayout.setDrawerListener(mDrawerToggle);
   }
 
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.menu_main, menu);
-    return true;
-  }
-
-  @Override
-  public boolean onOptionsItemSelected(MenuItem item) {
-    // Handle action bar item clicks here. The action bar will
-    // automatically handle clicks on the Home/Up button, so long
-    // as you specify a parent activity in AndroidManifest.xml.
-    int id = item.getItemId();
-
-    //noinspection SimplifiableIfStatement
-    if (id == R.id.action_settings) {
-      return true;
-    }
-
-    return super.onOptionsItemSelected(item);
-  }
+//  @Override
+//  public boolean onCreateOptionsMenu(Menu menu) {
+//    // Inflate the menu; this adds items to the action bar if it is present.
+//    getMenuInflater().inflate(R.menu.menu_main, menu);
+//    return true;
+//  }
+//
+//  @Override
+//  public boolean onOptionsItemSelected(MenuItem item) {
+//    // Handle action bar item clicks here. The action bar will
+//    // automatically handle clicks on the Home/Up button, so long
+//    // as you specify a parent activity in AndroidManifest.xml.
+//    int id = item.getItemId();
+//
+//    //noinspection SimplifiableIfStatement
+//    if (id == R.id.action_settings) {
+//      return true;
+//    }
+//
+//    return super.onOptionsItemSelected(item);
+//  }
 
   @Override
   public void onFragmentInteraction(Uri uri) {
@@ -203,7 +207,8 @@ public class MainActivity extends ActionBarActivity
   public void onStartActivity(String className) {
     Log.d("MainActivity", "StartActivity: " + className);
     switch (className) {
-      case "RaffleActivity" : selectItem(3);
+      case "RaffleFragment" :
+          selectItem(4);
           break;
       case "SignupFragment" :
           if (mToolbar != null) {
@@ -220,15 +225,20 @@ public class MainActivity extends ActionBarActivity
   public void signupOnStartActivity(String className) {
     Log.d("MainActivity", "StartActivity: " + className);
     switch (className) {
-      case "LoginFragment" : selectItem(5);
+      case "LoginFragment" :
+        selectItem(5);
         break;
     }
   }
 
   @Override
-  public void onSelectItem(String id)
+  public void onSelectAgendaItem(AgendaItem item)
   {
-    Log.d("MainActivity", "OnSelectItem - id: " + id);
+    Log.d("MainActivity", "OnSelectAgendaItem - Description: " + item.getSessionName());
+    FragmentManager fragmentManager = getFragmentManager();
+    Fragment fragment;
+    fragment = new AgendaDetailFragment();
+    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaDetailFragment.class.getSimpleName()).commit();
   }
 
   @Override
@@ -242,6 +252,12 @@ public class MainActivity extends ActionBarActivity
   public void onSignup() {
     Log.d("MainActivity", "onSignUp " );
     selectItem(5);
+  }
+
+  @Override
+  public void onHomeClicked() {
+    Log.d("MainActivity", "onHomeClicked" );
+    selectItem(1);
   }
 
   // pop the last fragment of the stack and update the title
@@ -341,8 +357,18 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
       case 4 :
-        fragment = new RaffleFragment();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
+        ParseUser currentUser = ParseUser.getCurrentUser();
+        if (currentUser == null) {  // if user is not logged in then force login before entering raffle
+          fragment = new LoginFragment();
+          args = new Bundle();
+          args.putString(LoginFragment.FROM_ACTIVITY, RaffleFragment.class.getSimpleName());
+          fragment.setArguments(args);
+          setTitle("Log In");
+          fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LoginFragment.class.getSimpleName()).commit();
+        } else {
+          fragment = new RaffleFragment();
+          fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
+        }
         break;
       case 5 :
         fragment = new LoginFragment();
@@ -351,19 +377,19 @@ public class MainActivity extends ActionBarActivity
 
       case 6 :
         fragment = new SocialFragment();
-        args = new Bundle();
-        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
-        fragment.setArguments(args);
+//        args = new Bundle();
+//        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+//        fragment.setArguments(args);
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         break;
 
-      default :
-        fragment = new DrawerFragment(mDrawerAdapter);
-        args = new Bundle();
-        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
-        fragment.setArguments(args);
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-        break;
+//      default :
+//        fragment = new DrawerFragment();
+//        args = new Bundle();
+//        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
+//        fragment.setArguments(args);
+//        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+//        break;
     }
     // update selected item and title, then close the drawer
     mDrawerList.setItemChecked(position, true);
@@ -373,11 +399,12 @@ public class MainActivity extends ActionBarActivity
     mDrawerLayout.closeDrawer(mDrawerList);
   }
 
-//  @Override
-//  public void setTitle(CharSequence title) {
-//    mTitle = title;
-//    getActionBar().setTitle(mTitle);
-//  }
+  @Override
+  public void setTitle(CharSequence title) {
+    if (mToolbar != null) {
+      mToolbar.setTitle(title);
+    }
+  }
 
   /**
    * When using the ActionBarDrawerToggle, you must call it during
@@ -414,13 +441,18 @@ public class MainActivity extends ActionBarActivity
    * Fragment that appears in the "content_frame", shows a planet
    */
   public static class DrawerFragment extends Fragment {
+    public static final String ARG_DRAWER_ADAPTER = "drawer_adapter";
     public static final String ARG_DRAWER_NUMBER = "drawer_number";
     private DrawerAdapter mDrawerAdapter;
 
-    public DrawerFragment(DrawerAdapter drawerAdapter) {
-      // Empty constructor required for fragment subclasses
-      mDrawerAdapter = drawerAdapter;
+    public DrawerFragment() {
+
     }
+
+//    public DrawerFragment(DrawerAdapter drawerAdapter) {
+//      // Empty constructor required for fragment subclasses
+//      mDrawerAdapter = drawerAdapter;
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -428,14 +460,16 @@ public class MainActivity extends ActionBarActivity
       View rootView = inflater.inflate(R.layout.fragment_drawer, container, false);
       int position = getArguments().getInt(ARG_DRAWER_NUMBER);
 
-      DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-      if (drawerItem != null)
-      {
-        String planet = drawerItem.title;
-        int imageId = drawerItem.resourceId;
-        ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
-        getActivity().setTitle(planet);
-      }
+//      mDrawerAdapter = (DrawerAdapter)getArguments().get(ARG_DRAWER_ADAPTER);
+//
+//      DrawerItem drawerItem = mDrawerAdapter.getItem(position);
+//      if (drawerItem != null)
+//      {
+//        String planet = drawerItem.title;
+//        int imageId = drawerItem.resourceId;
+//        ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+//        getActivity().setTitle(planet);
+//      }
       return rootView;
     }
   }

@@ -41,14 +41,12 @@ public class LoginFragment extends Fragment {
     private ParseUser mCurrentUser;
     LinearLayout mLogInView;
     LinearLayout mLoggedInView;
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String FROM_ACTIVITY = "fromActivity";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    public static final String FROM_ACTIVITY = "fromActivity";
+
     private String fromActivity;
-    private String mParam2;
+
+    private Thread.UncaughtExceptionHandler androidDefaultUEH;
 
     private OnFragmentInteractionListener mListener;
 
@@ -65,7 +63,6 @@ public class LoginFragment extends Fragment {
         LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
         args.putString(FROM_ACTIVITY, fromActivity);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -79,7 +76,7 @@ public class LoginFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             fromActivity = getArguments().getString(FROM_ACTIVITY);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
         } else {
             fromActivity = "";
         }
@@ -126,7 +123,7 @@ public class LoginFragment extends Fragment {
                         @Override
                         public void done(ParseUser user, ParseException e) {
                             if (user != null) {
-                                if (fromActivity != null && fromActivity.compareTo(RaffleActivity.class.toString()) == 0) {
+                                if (fromActivity != null) {
                                     mListener.onStartActivity(fromActivity);
                                 } else {
                                     mListener.onSignIn();
@@ -232,7 +229,7 @@ public class LoginFragment extends Fragment {
                 @Override
                 public void done(ParseUser user, ParseException e) {
                     if (user != null) {
-                        if (fromActivity != null && fromActivity.compareTo(RaffleActivity.class.toString()) == 0) {
+                        if (fromActivity != null) {
                             mListener.onStartActivity(fromActivity);
                         } else {
                             mListener.onSignIn();

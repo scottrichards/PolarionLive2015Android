@@ -1,6 +1,7 @@
 package com.parse.starter.fragments;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.app.ListFragment;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -11,6 +12,7 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.parse.FindCallback;
@@ -36,14 +38,14 @@ import java.util.List;
  */
 public class AgendaItemFragment extends ListFragment implements AbsListView.OnItemClickListener {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+//    // TODO: Rename parameter arguments, choose names that match
+//    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+//    private static final String ARG_PARAM1 = "param1";
+//    private static final String ARG_PARAM2 = "param2";
+//
+//    // TODO: Rename and change types of parameters
+//    private String mParam1;
+//    private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
@@ -61,10 +63,10 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
     // TODO: Rename and change types of parameters
     public static AgendaItemFragment newInstance(String param1, String param2) {
         AgendaItemFragment fragment = new AgendaItemFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+//        Bundle args = new Bundle();
+//        args.putString(ARG_PARAM1, param1);
+//        args.putString(ARG_PARAM2, param2);
+//        fragment.setArguments(args);
         return fragment;
     }
 
@@ -79,10 +81,10 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
         ParseObject.registerSubclass(AgendaItem.class);
         mAdapter = new AgendaAdapter(getActivity(), new ArrayList<AgendaItem>());
         updateData();
@@ -142,13 +144,25 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
         mListener = null;
     }
 
+    // Why does this not get called but commenting it out causes an ERROR
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-//            mListener.onSelectItem(DummyContent.ITEMS.get(position).id);
+                mListener.onSelectAgendaItem(mAdapter.getItem(position));
         }
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id)
+    {
+        if (null != mListener) {
+            // Notify the active callbacks interface (the activity, if the
+            // fragment is attached to one) that an item has been selected.
+            mListener.onSelectAgendaItem(mAdapter.getItem(position));
+
+         }
     }
 
     /**
@@ -175,7 +189,7 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        public void onSelectItem(String id);
+        public void onSelectAgendaItem(AgendaItem id);
     }
 
 }
