@@ -2,73 +2,108 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="10dp"
              tools:context="com.parse.starter.fragments.AgendaDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/time"
-        android:layout_gravity="left|top"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="9:00 - 10:00"
+            android:id="@+id/time"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/sessionName"
-        android:layout_below="@+id/time"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Industry Predictions"
+            android:id="@+id/sessionName"
+            android:layout_below="@+id/time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/sessionDescription"
-        android:layout_below="@+id/sessionName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Session Description"
+            android:id="@+id/sessionDescription"
+            android:layout_below="@+id/sessionName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:minLines="3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/presenter"
-        android:layout_below="@+id/sessionDescription"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Stephen Elop"
+            android:id="@+id/presenter"
+            android:layout_below="@+id/sessionDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Presenter:"
-        android:id="@+id/textView9"
+        android:id="@+id/presenterLabel"
         android:layout_below="@+id/presenter"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Content:"
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView9"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/contentLabel"
+        android:layout_below="@+id/presenterLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignTop="@+id/presenter"
+        android:layout_toRightOf="@+id/presenterLabel"
+        android:layout_toEndOf="@+id/presenterLabel"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_below="@+id/presenterLabel"
+        android:layout_toRightOf="@+id/presenterLabel"
+        android:layout_toEndOf="@+id/contentLabel"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rate"
         android:id="@+id/button3"
-        android:layout_below="@+id/textView10"
+        android:layout_below="@+id/ratingBar2"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>

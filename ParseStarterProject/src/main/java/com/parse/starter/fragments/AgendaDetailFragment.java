@@ -7,6 +7,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.parse.starter.R;
 import com.parse.starter.model.AgendaItem;
@@ -16,7 +17,8 @@ public class AgendaDetailFragment extends Fragment {
     private static final String ARG_ITEM = "item";
 
 
-    private AgendaItem item;
+    private AgendaItem mItem;
+    private View mView;
 
 //    private OnFragmentInteractionListener mListener;
 
@@ -53,7 +55,17 @@ public class AgendaDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_agenda_detail, container, false);
+        mView = inflater.inflate(R.layout.fragment_agenda_detail, container, false);
+        TextView sessionView = (TextView)mView.findViewById(R.id.sessionName);
+        sessionView.setText(mItem.getSessionName());
+        TextView descriptionView = (TextView)mView.findViewById(R.id.sessionDescription);
+        descriptionView.setText(mItem.getDescription());
+        TextView timeView = (TextView)mView.findViewById(R.id.time);
+        timeView.setText(mItem.getDisplayTime());
+        TextView speakerView = (TextView)mView.findViewById(R.id.presenter);
+        speakerView.setText(mItem.getSpeaker());
+
+        return mView;
     }
 
 
@@ -73,6 +85,10 @@ public class AgendaDetailFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
  //       mListener = null;
+    }
+
+    public void setAgendaItem(AgendaItem item) {
+        mItem = item;
     }
 
     /**

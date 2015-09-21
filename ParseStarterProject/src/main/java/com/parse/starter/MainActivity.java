@@ -235,10 +235,10 @@ public class MainActivity extends ActionBarActivity
   public void onSelectAgendaItem(AgendaItem item)
   {
     Log.d("MainActivity", "OnSelectAgendaItem - Description: " + item.getSessionName());
-    FragmentManager fragmentManager = getFragmentManager();
-    Fragment fragment;
-    fragment = new AgendaDetailFragment();
-    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaDetailFragment.class.getSimpleName()).commit();
+//    FragmentManager fragmentManager = getFragmentManager();
+//    Fragment fragment;
+//    fragment = new AgendaDetailFragment();
+//    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaDetailFragment.class.getSimpleName()).commit();
   }
 
   @Override
