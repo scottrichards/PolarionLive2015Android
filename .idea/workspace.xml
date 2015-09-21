@@ -23,15 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0097009-bfb6-41e3-8e18-8f182f1fe723" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -3143,7 +3134,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442767797400</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Working on Agenda Details">
+      <created>1442797232766</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1442797232766</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3213,7 +3210,8 @@
     <MESSAGE value="Sign Up is starting to work" />
     <MESSAGE value="Switch back and forth between Sign Up and Log In." />
     <MESSAGE value="Adding Agenda Details." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Agenda Details." />
+    <MESSAGE value="Working on Agenda Details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on Agenda Details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
