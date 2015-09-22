@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Session"
-        android:id="@+id/time"
+        android:id="@+id/sessionName"
         android:layout_below="@id/displayTime"
         android:layout_toRightOf="@+id/iconView"
         android:layout_marginBottom="10dp"

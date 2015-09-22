@@ -1,7 +1,6 @@
 package com.parse.starter.fragments;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -60,7 +59,7 @@ public class AgendaDetailFragment extends Fragment {
         sessionView.setText(mItem.getSessionName());
         TextView descriptionView = (TextView)mView.findViewById(R.id.sessionDescription);
         descriptionView.setText(mItem.getDescription());
-        TextView timeView = (TextView)mView.findViewById(R.id.time);
+        TextView timeView = (TextView)mView.findViewById(R.id.sessionName);
         timeView.setText(mItem.getDisplayTime());
         TextView speakerView = (TextView)mView.findViewById(R.id.presenter);
         speakerView.setText(mItem.getSpeaker());

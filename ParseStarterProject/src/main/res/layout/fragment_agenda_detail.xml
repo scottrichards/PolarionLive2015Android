@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="9:00 - 10:00"
-            android:id="@+id/time"
+            android:id="@+id/sessionName"
             android:layout_gravity="left|top"
             android:layout_marginTop="5dp"
             />
@@ -25,7 +25,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Industry Predictions"
             android:id="@+id/sessionName"
-            android:layout_below="@+id/time"
+            android:layout_below="@+id/sessionName"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
