@@ -12,12 +12,17 @@ import android.widget.TextView;
 import com.parse.starter.R;
 import com.parse.starter.model.AgendaItem;
 
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by scottrichards on 9/4/15.
  */
 public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
+
+    private static final int TYPE_ITEM = 0;
+    private static final int TYPE_SEPARATOR = 1;
+    private static final int TYPE_MAX_COUNT = TYPE_SEPARATOR + 1;
 
     private Context mContext;
     private List<AgendaItem> mAgendaItems;
@@ -34,6 +39,30 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
             return mAgendaItems.get(position);
         else
             return null;
+    }
+
+    public void addSeparatorItem(Date currentDate)
+    {
+        AgendaItem separatorItem = new AgendaItem();
+        separatorItem.date = currentDate;
+        separatorItem.itemType = TYPE_SEPARATOR;
+        this.add(separatorItem);
+    }
+
+    public void addItem(AgendaItem item)
+    {
+        item.itemType = TYPE_ITEM;
+        this.add(item);
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return mAgendaItems.contains(position) ? TYPE_SEPARATOR : TYPE_ITEM;
+    }
+
+    @Override
+    public int getViewTypeCount() {
+        return TYPE_MAX_COUNT;
     }
 
     public View getView(int position, View convertView, ViewGroup parent)

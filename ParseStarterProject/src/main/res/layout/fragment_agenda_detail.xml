@@ -2,9 +2,10 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
              tools:context="com.parse.starter.fragments.AgendaDetailFragment">
 
 
@@ -16,7 +17,7 @@
             android:id="@+id/time"
             android:layout_gravity="left|top"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
+
             />
 
         <TextView
@@ -41,7 +42,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
+
             android:minLines="3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"/>
@@ -56,54 +57,51 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"/>
+            />
 
-    <TextView
+
+
+
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Presenter:"
-        android:id="@+id/presenterLabel"
         android:layout_below="@+id/presenter"
+        android:columnCount="2"
+        android:rowCount="2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        />
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Content:"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:id="@+id/contentLabel"
-        android:layout_below="@+id/presenterLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:id="@+id/ratingGridLayout">
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_alignTop="@+id/presenter"
-        android:layout_toRightOf="@+id/presenterLabel"
-        android:layout_toEndOf="@+id/presenterLabel"/>
+        <TextView
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar2"
-        android:layout_below="@+id/presenterLabel"
-        android:layout_toRightOf="@+id/presenterLabel"
-        android:layout_toEndOf="@+id/contentLabel"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Presenter:"
+            android:id="@+id/presenterLabelGrid"
+
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBarGrid"
+          />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Content:"
+            android:id="@+id/contentLabelGrid"/>
+
+        <RatingBar
+            android:id="@+id/contentBarGrid"/>
+    </GridLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rate"
         android:id="@+id/button3"
-        android:layout_below="@+id/ratingBar2"
+        android:layout_below="@+id/ratingGridLayout"
         android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

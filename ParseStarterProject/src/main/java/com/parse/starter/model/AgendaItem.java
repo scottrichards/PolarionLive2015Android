@@ -1,11 +1,18 @@
 package com.parse.starter.model;
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
+
+import java.util.Date;
+
 /**
  * Created by scottrichards on 9/4/15.
  */
 @ParseClassName("Agenda")
 public class AgendaItem extends ParseObject {
+
+    public int itemType;
+    public Date date;
+
     public AgendaItem(){
 
     }
@@ -60,5 +67,9 @@ public class AgendaItem extends ParseObject {
 
     public String getIcon(){
         return getString("icon");
+    }
+
+    public Date getStartDate() {
+        return getDate("start");
     }
 }
