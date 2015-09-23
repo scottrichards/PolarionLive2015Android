@@ -72,4 +72,10 @@ public class AgendaItem extends ParseObject {
     public Date getStartDate() {
         return getDate("start");
     }
+
+    public void setDisplayDate(String displayDate){
+        put("displayDate", displayDate);
+    }
+
+    public String getDisplayDate() { return getString("displayDate"); }
 }

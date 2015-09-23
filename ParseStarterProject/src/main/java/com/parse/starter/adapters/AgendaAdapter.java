@@ -41,10 +41,9 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
             return null;
     }
 
-    public void addSeparatorItem(Date currentDate)
+    public void addSeparatorItem(AgendaItem separatorItem,String displayDate)
     {
-        AgendaItem separatorItem = new AgendaItem();
-        separatorItem.date = currentDate;
+        separatorItem.setDisplayDate(displayDate);
         separatorItem.itemType = TYPE_SEPARATOR;
         this.add(separatorItem);
     }
@@ -57,7 +56,9 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
 
     @Override
     public int getItemViewType(int position) {
-        return mAgendaItems.contains(position) ? TYPE_SEPARATOR : TYPE_ITEM;
+        AgendaItem agendaItem = mAgendaItems.get(position);
+        return agendaItem.itemType;
+//        return mAgendaItems(position) ? TYPE_SEPARATOR : TYPE_ITEM;
     }
 
     @Override
@@ -70,7 +71,7 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
 
         if (position < mAgendaItems.size()) {
             AgendaItem agendaItem = mAgendaItems.get(position);
-            ViewHolder holder = null;
+ //           ViewHolder holder = null;
             if(convertView == null){
                 LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);
                 switch (agendaItem.itemType) {
@@ -116,9 +117,10 @@ public class AgendaAdapter extends ArrayAdapter<AgendaItem> {
                 } else {
                     iconView.setImageBitmap(null);
                 }
-            } else {    // It is a separator type
+            }
+            else {    // It is a separator type
                 TextView dateView = (TextView) convertView.findViewById(R.id.date);
-                dateView.setText("Mon Oct 12");
+                dateView.setText(agendaItem.getDisplayDate());
             }
         }
 

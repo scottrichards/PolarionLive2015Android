@@ -87,15 +87,15 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
                 if (agendaItems != null) {
                     mAdapter.clear();
                     String currentDateString, lastDateString = null;
-                    SimpleDateFormat sdf = new SimpleDateFormat("E, MMM dd");
+                    SimpleDateFormat sdf = new SimpleDateFormat("EEEE, MMM dd");
 
                     for (int i = 0; i < agendaItems.size(); i++) {
                         AgendaItem agendaItem = agendaItems.get(i);
                         currentDateString = sdf.format(agendaItem.getStartDate());
                         if (currentDateString.equals(lastDateString)) {
-                            mAdapter.addItem(agendaItems.get(i));
+                            mAdapter.addItem(agendaItem);
                         } else {
-                            mAdapter.addSeparatorItem(agendaItem.getStartDate());
+                            mAdapter.addSeparatorItem(agendaItem,currentDateString);
                         }
                         lastDateString = currentDateString;
                     }
