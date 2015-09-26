@@ -1,14 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.parse.starter.fragments.SocialFragment">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parse.starter.fragments.SocialFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal|top"
+        android:minLines="3"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Facebook Post"
-        android:id="@+id/button"
+        android:text="Post"
+        android:id="@+id/postButton"
         android:layout_gravity="center_horizontal|top" />
 
-</FrameLayout>
+
+
+</LinearLayout>
