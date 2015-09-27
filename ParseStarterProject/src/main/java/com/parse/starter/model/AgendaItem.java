@@ -78,4 +78,6 @@ public class AgendaItem extends ParseObject {
     }
 
     public String getDisplayDate() { return getString("displayDate"); }
+
+    public Boolean isRateable() { return getBoolean("rateable"); }
 }

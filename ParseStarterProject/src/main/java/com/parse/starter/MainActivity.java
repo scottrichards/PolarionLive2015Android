@@ -347,16 +347,15 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(SpeakerItemFragment.class.getSimpleName()).commit();
         break;
       case 3 :
-//        fragment = new WebFragment();
-//        args = new Bundle();
-//        args.putString(WebFragment.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
-//        fragment.setArguments(args);
-//
-//        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         fragment = new LocationFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
+
       case 4 :
+        fragment = new LocationFragment();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
+        break;
+      case 5 :
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser == null) {  // if user is not logged in then force login before entering raffle
           fragment = new LoginFragment();
@@ -370,12 +369,12 @@ public class MainActivity extends ActionBarActivity
           fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
         }
         break;
-      case 5 :
+      case 6 :
         fragment = new LoginFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LoginFragment.class.getSimpleName()).commit();
         break;
 
-      case 6 :
+      case 7 :
         fragment = new SocialFragment();
 //        args = new Bundle();
 //        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);

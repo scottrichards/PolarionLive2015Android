@@ -6,6 +6,8 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.TextView;
 
 import com.parse.starter.R;
@@ -18,6 +20,8 @@ public class AgendaDetailFragment extends Fragment {
 
     private AgendaItem mItem;
     private View mView;
+    private GridLayout mRatingLayout;
+    private Button mRateButton;
 
 //    private OnFragmentInteractionListener mListener;
 
@@ -55,15 +59,27 @@ public class AgendaDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_agenda_detail, container, false);
-        TextView sessionView = (TextView)mView.findViewById(R.id.sessionName);
-        sessionView.setText(mItem.getSessionName());
+        TextView sessionTime = (TextView)mView.findViewById(R.id.sessionTime);
+        sessionTime.setText(mItem.getDisplayTime());
         TextView descriptionView = (TextView)mView.findViewById(R.id.sessionDescription);
         descriptionView.setText(mItem.getDescription());
-        TextView timeView = (TextView)mView.findViewById(R.id.sessionName);
-        timeView.setText(mItem.getDisplayTime());
+        TextView sessionName = (TextView)mView.findViewById(R.id.sessionName);
+        sessionName.setText(mItem.getSessionName());
         TextView speakerView = (TextView)mView.findViewById(R.id.presenter);
         speakerView.setText(mItem.getSpeaker());
+        mRateButton = (Button)mView.findViewById(R.id.rateButton);
+        mRateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
+        Boolean isRateable = mItem.isRateable();
+        if (!isRateable) {
+            mRateButton.setVisibility(View.INVISIBLE);
+            mRatingLayout = (GridLayout)mView.findViewById(R.id.ratingGridLayout);
+            mRatingLayout.setVisibility(View.INVISIBLE);
+        }
         return mView;
     }
 
