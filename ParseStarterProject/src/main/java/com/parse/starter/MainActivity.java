@@ -347,7 +347,11 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(SpeakerItemFragment.class.getSimpleName()).commit();
         break;
       case 3 :
-        fragment = new LocationFragment();
+        fragment = new WebFragment();
+        args = new Bundle();
+        args.putString(WebFragment.ARG_URL_PARAM, "http://54.183.27.217/2015m/partners/index.html");
+        args.putString(WebFragment.ARG_TITLE_PARAM, "Partners");
+        fragment.setArguments(args);
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
 

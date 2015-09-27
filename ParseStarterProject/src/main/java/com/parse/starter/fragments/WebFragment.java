@@ -66,7 +66,7 @@ public class WebFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_web, container, false);
         webView = (WebView)view.findViewById(R.id.webView);
-        if (urlParam.length() > 0 )
+        if (urlParam != null && urlParam.length() > 0 )
             webView.loadUrl(urlParam);
         return view;
     }

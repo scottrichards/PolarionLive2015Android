@@ -80,6 +80,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Presenter:"
             android:id="@+id/presenterLabelGrid"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
 
             />
 
@@ -90,7 +92,10 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Content:"
-            android:id="@+id/contentLabelGrid"/>
+            android:id="@+id/contentLabelGrid"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
 
         <RatingBar
             android:id="@+id/contentBarGrid"/>
