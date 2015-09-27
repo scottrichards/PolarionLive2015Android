@@ -8,8 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.parse.ParseObject;
+import com.parse.ParseUser;
 import com.parse.starter.R;
 import com.parse.starter.model.AgendaItem;
 
@@ -67,11 +70,20 @@ public class AgendaDetailFragment extends Fragment {
         sessionName.setText(mItem.getSessionName());
         TextView speakerView = (TextView)mView.findViewById(R.id.presenter);
         speakerView.setText(mItem.getSpeaker());
+        final RatingBar contentBar = (RatingBar)mView.findViewById(R.id.contentBarGrid);
+        final RatingBar presenterBar = (RatingBar)mView.findViewById(R.id.presenterBarGrid);
         mRateButton = (Button)mView.findViewById(R.id.rateButton);
         mRateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ParseObject sessionRating = new ParseObject("SessionRating");
+                float contentRating = contentBar.getRating(), presenterRating = presenterBar.getRating();
+                sessionRating.put("contentRating", contentRating);
+                sessionRating.put("presenterRating", presenterRating);
+                if (ParseUser.getCurrentUser() != null)
+                    sessionRating.put("user", ParseUser.getCurrentUser());
+                sessionRating.put("session",mItem);
+                sessionRating.saveEventually();
             }
         });
         Boolean isRateable = mItem.isRateable();

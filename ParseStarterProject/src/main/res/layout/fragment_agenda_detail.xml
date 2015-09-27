@@ -84,7 +84,7 @@
             />
 
         <RatingBar
-            android:id="@+id/ratingBarGrid"
+            android:id="@+id/presenterBarGrid"
           />
 
         <TextView
