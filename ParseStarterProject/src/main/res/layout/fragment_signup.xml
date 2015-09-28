@@ -91,6 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="17sp"
+            android:textAllCaps="false"
             android:text="@string/already_have_an_account_label" />
     </LinearLayout>
 </FrameLayout>

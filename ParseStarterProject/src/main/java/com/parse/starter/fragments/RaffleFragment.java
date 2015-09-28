@@ -30,14 +30,7 @@ import com.parse.starter.utility.URLService;
  */
 public class RaffleFragment extends Fragment {
     private View mView;
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
@@ -52,10 +45,6 @@ public class RaffleFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static RaffleFragment newInstance(String param1, String param2) {
         RaffleFragment fragment = new RaffleFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -66,10 +55,6 @@ public class RaffleFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -107,12 +92,18 @@ public class RaffleFragment extends Fragment {
         rulesButton.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-//                                               Intent webIntent = new Intent(getActivity().getApplicationContext(), WebActivity.class);
-//                                               startActivity(webIntent);
-                                               onRules(v);
+                                               onOpenURL("rules.html","Raffle Rules");
                                            }
                                        }
         );
+
+        Button samplesButton = (Button)mView.findViewById(R.id.sampleButton);
+        samplesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onOpenURL("testimonial.html","Sample Testimonials");
+            }
+        });
         return mView;
     }
 
@@ -154,11 +145,12 @@ public class RaffleFragment extends Fragment {
         public void onEnterRaffle();
     }
 
-    public void onRules(View view) {
-        Intent webIntent = new Intent(getActivity().getApplicationContext(), WebActivity.class);
-        webIntent.putExtra(WebActivity.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
-        webIntent.putExtra(WebActivity.ARG_TITLE_PARAM, "Raffle Rules");
-        startActivity(webIntent);
 
+    public void onOpenURL(String url, String title)
+    {
+        Intent webIntent = new Intent(getActivity().getApplicationContext(), WebActivity.class);
+        webIntent.putExtra(WebActivity.ARG_URL_PARAM, URLService.buildUrl(url));
+        webIntent.putExtra(WebActivity.ARG_TITLE_PARAM, title);
+        startActivity(webIntent);
     }
 }

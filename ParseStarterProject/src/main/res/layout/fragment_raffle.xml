@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="Sample Testimonials"
         android:onClick="onSampleTestimonial"
-        android:id="@+id/button2"
+        android:id="@+id/sampleButton"
         android:layout_below="@+id/testimonialText"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
