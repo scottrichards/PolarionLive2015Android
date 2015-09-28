@@ -10,18 +10,20 @@ import android.webkit.WebView;
 import com.parse.starter.R;
 
 public class WebActivity extends Activity {
+    public static final String ARG_URL_PARAM = "urlParam";
+    public static final String ARG_TITLE_PARAM = "titleParam";
 
     private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
-        String url = getIntent().getStringExtra("url");
-        String title = getIntent().getStringExtra("title");
-        if (title.length() > 0)
+        String url = getIntent().getStringExtra(ARG_URL_PARAM);
+        String title = getIntent().getStringExtra(ARG_TITLE_PARAM);
+        if (title != null && title.length() > 0)
             setTitle(title);
         webView = (WebView)findViewById(R.id.webView);
-        if (url.length() > 0 )
+        if (url != null && url.length() > 0 )
             webView.loadUrl(url);
     }
 

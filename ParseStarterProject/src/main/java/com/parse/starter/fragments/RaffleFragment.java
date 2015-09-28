@@ -3,6 +3,7 @@ package com.parse.starter.fragments;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -19,6 +20,8 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.starter.MainActivity;
 import com.parse.starter.R;
+import com.parse.starter.activities.WebActivity;
+import com.parse.starter.utility.URLService;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -99,6 +102,17 @@ public class RaffleFragment extends Fragment {
                 }
             }
         });
+
+        Button rulesButton = (Button)mView.findViewById(R.id.rules);
+        rulesButton.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View v) {
+//                                               Intent webIntent = new Intent(getActivity().getApplicationContext(), WebActivity.class);
+//                                               startActivity(webIntent);
+                                               onRules(v);
+                                           }
+                                       }
+        );
         return mView;
     }
 
@@ -138,5 +152,13 @@ public class RaffleFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         public void onEnterRaffle();
+    }
+
+    public void onRules(View view) {
+        Intent webIntent = new Intent(getActivity().getApplicationContext(), WebActivity.class);
+        webIntent.putExtra(WebActivity.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
+        webIntent.putExtra(WebActivity.ARG_TITLE_PARAM, "Raffle Rules");
+        startActivity(webIntent);
+
     }
 }

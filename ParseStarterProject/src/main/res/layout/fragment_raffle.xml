@@ -54,7 +54,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Raffle Rules"
-        android:onClick="onRules"
         android:id="@+id/rules"
         android:layout_below="@+id/testimonialText"
         android:layout_alignParentLeft="true"

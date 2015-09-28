@@ -41,10 +41,12 @@ import android.widget.ListView;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 import com.parse.starter.activities.AgendaActivity;
+import com.parse.starter.activities.AgendaDetailsActivity;
 import com.parse.starter.activities.LoginActivity;
 import com.parse.starter.activities.MapsActivity;
 import com.parse.starter.activities.RaffleActivity;
 import com.parse.starter.activities.SpeakersActivity;
+import com.parse.starter.activities.WebActivity;
 import com.parse.starter.adapters.DrawerAdapter;
 import com.parse.starter.fragments.AgendaDetailFragment;
 import com.parse.starter.fragments.AgendaItemFragment;
@@ -235,6 +237,13 @@ public class MainActivity extends ActionBarActivity
   public void onSelectAgendaItem(AgendaItem item)
   {
     Log.d("MainActivity", "OnSelectAgendaItem - Description: " + item.getSessionName());
+    StarterApplication myApp = (StarterApplication)getApplication();
+    myApp.setSelectedAgendaItem(item);
+    Intent agendaDetailsActivity= new Intent(MainActivity.this, AgendaDetailsActivity.class);
+//    webIntent.putExtra(WebActivity.ARG_URL_PARAM, URLService.buildUrl("rules.html"));
+//    webIntent.putExtra(WebActivity.ARG_TITLE_PARAM, "Raffle Rules");
+    startActivity(agendaDetailsActivity);
+
 //    FragmentManager fragmentManager = getFragmentManager();
 //    Fragment fragment;
 //    fragment = new AgendaDetailFragment();

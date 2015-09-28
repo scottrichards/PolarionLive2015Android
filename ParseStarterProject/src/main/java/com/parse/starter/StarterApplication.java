@@ -14,9 +14,12 @@ import android.content.Intent;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseUser;
+import com.parse.starter.model.AgendaItem;
 
 
 public class StarterApplication extends Application {
+
+  private AgendaItem selectedItem;
 
   @Override
   public void onCreate() {
@@ -36,5 +39,11 @@ public class StarterApplication extends Application {
     ParseACL.setDefaultACL(defaultACL, true);
   }
 
+  public void setSelectedAgendaItem(AgendaItem item) {
+    selectedItem = item;
+  }
 
+  public AgendaItem getSelectedAgendaItem() {
+    return selectedItem;
+  }
 }

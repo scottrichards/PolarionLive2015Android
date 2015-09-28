@@ -158,12 +158,13 @@ public class AgendaItemFragment extends ListFragment implements AbsListView.OnIt
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-  //          mListener.onSelectAgendaItem(mAdapter.getItem(position));
-            FragmentManager fragmentManager = getFragmentManager();
-            AgendaDetailFragment fragment;
-            fragment = new AgendaDetailFragment();
-            fragment.setAgendaItem(mAdapter.getItem(position));
-            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaDetailFragment.class.getSimpleName()).commit();
+            mListener.onSelectAgendaItem(mAdapter.getItem(position));
+
+//            FragmentManager fragmentManager = getFragmentManager();
+//            AgendaDetailFragment fragment;
+//            fragment = new AgendaDetailFragment();
+//            fragment.setAgendaItem(mAdapter.getItem(position));
+//            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaDetailFragment.class.getSimpleName()).commit();
          }
     }
 
