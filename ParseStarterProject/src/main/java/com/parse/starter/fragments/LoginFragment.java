@@ -55,7 +55,6 @@ public class LoginFragment extends Fragment {
      * this fragment using the provided parameters.
      *
      * @param fromActivity Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment LoginFragment.
      */
     // TODO: Rename and change types and number of parameters
@@ -123,7 +122,7 @@ public class LoginFragment extends Fragment {
                         @Override
                         public void done(ParseUser user, ParseException e) {
                             if (user != null) {
-                                if (fromActivity != null) {
+                                if (fromActivity != null && fromActivity.length() > 0) {
                                     mListener.onStartActivity(fromActivity);
                                 } else {
                                     mListener.onSignIn();

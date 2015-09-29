@@ -16,6 +16,7 @@ import com.parse.ParseAnalytics;
 import com.parse.starter.R;
 import com.parse.starter.adapters.DrawerAdapter;
 import com.parse.starter.model.DrawerItem;
+import com.parse.starter.model.MenuChoices;
 
 /**
  * Created by scottrichards on 9/10/15.
@@ -78,7 +79,7 @@ public class DrawerActionBarActivity extends ActionBarActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Log.d("MainActivity", "Clicked in Drawer Position: " + position);
             switch (position) {
-                case 1 :  mDrawerList.setItemChecked(position, true);
+                case MenuChoices.AGENDA :  mDrawerList.setItemChecked(position, true);
                     DrawerItem drawerItem = mDrawerAdapter.getItem(position);
                     if (drawerItem != null)
                         setTitle(drawerItem.title);
@@ -87,19 +88,19 @@ public class DrawerActionBarActivity extends ActionBarActivity {
                     startActivity(agendaIntent);
                     finish();
                     break;
-                case 2 :  Intent speakersIntent = new Intent(DrawerActionBarActivity.this,SpeakersActivity.class);
+                case MenuChoices.SPEAKERS :  Intent speakersIntent = new Intent(DrawerActionBarActivity.this,SpeakersActivity.class);
                     startActivity(speakersIntent);
                     finish();
                     break;
-                case 3 :  Intent mapIntent = new Intent(DrawerActionBarActivity.this,MapsActivity.class);
+                case MenuChoices.MAP :  Intent mapIntent = new Intent(DrawerActionBarActivity.this,MapsActivity.class);
                     startActivity(mapIntent);
                     finish();
                     break;
-                case 4 :  Intent raffleIntent = new Intent(DrawerActionBarActivity.this,RaffleActivity.class);
+                case MenuChoices.RAFFLE :  Intent raffleIntent = new Intent(DrawerActionBarActivity.this,RaffleActivity.class);
                     startActivity(raffleIntent);
                     finish();
                     break;
-                case 5 :  Intent loginIntent = new Intent(DrawerActionBarActivity.this,LoginActivity.class);
+                case MenuChoices.LOGIN :  Intent loginIntent = new Intent(DrawerActionBarActivity.this,LoginActivity.class);
                     startActivity(loginIntent);
                     finish();
                     break;

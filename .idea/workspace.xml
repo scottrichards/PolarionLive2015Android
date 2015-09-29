@@ -22,18 +22,18 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0097009-bfb6-41e3-8e18-8f182f1fe723" name="Default" comment="Got Partners page working, fixed up Agenda Details View.">
+    <list default="true" id="a0097009-bfb6-41e3-8e18-8f182f1fe723" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PolarionLive2015.iws" />
@@ -62,14 +62,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java">
+      <file leaf-file-name="LoginFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-8.074074">
+              <caret line="231" column="53" selection-start-line="231" selection-start-column="38" selection-end-line="231" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_agenda_details.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="44.689655">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,101 +88,11 @@
       <file leaf-file-name="RaffleFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.740741">
+            <state vertical-scroll-proportion="0.0">
               <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1603#1604#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#2028#3199#0" expanded="true" />
-                <element signature="e#3198#3199#0" expanded="true" />
-                <element signature="e#3311#3638#0" expanded="true" />
-                <element signature="e#3637#3638#0" expanded="true" />
-                <element signature="e#3770#3955#0" expanded="true" />
-                <element signature="e#3954#3955#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.793102">
-              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_signup.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8771552">
-              <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="222" column="3" selection-start-line="222" selection-start-column="3" selection-end-line="222" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_raffle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_raffle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="15.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_raffle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.379311">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpeakersActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/SpeakersActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,6 +107,72 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5925927">
+              <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6147#6167#0" expanded="true" />
+                <element signature="e#6169#6190#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawerItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/DrawerItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuChoices.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawerActionBarActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33279222">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -193,8 +180,8 @@
       <list>
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1921,10 +1908,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/MapFragment.java" />
@@ -1934,7 +1919,6 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agendaitem_list.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/Speaker.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_location.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/SpeakersAdapter.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SessionItemFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_item.xml" />
@@ -1946,7 +1930,6 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_social.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/speaker_row_item.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/release/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java" />
@@ -1961,10 +1944,8 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/StarterApplication.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java" />
@@ -1972,6 +1953,12 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" />
       </list>
     </option>
   </component>
@@ -1986,10 +1973,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="596" />
-    <option name="y" value="244" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="x" value="587" />
+    <option name="y" value="87" />
+    <option name="width" value="1799" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2280,7 +2267,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2469,41 +2455,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PolarionLive2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PolarionLive2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2711,6 +2663,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -2718,7 +2671,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="237e8e4905e72e42" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Polarion/LogosImageAssets/partners.png" />
     <property name="FullScreen" value="false" />
@@ -3127,34 +3080,40 @@
       <option name="project" value="LOCAL" />
       <updated>1443402928708</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Get Raffle Rules and Sample Testimonials working">
+      <created>1443415901055</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1443415901055</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="596" y="244" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="587" y="87" width="1799" height="1177" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711306" sideWeight="0.4908425" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704994" sideWeight="0.4860558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42810097" sideWeight="0.6111111" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42810097" sideWeight="0.3888889" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36757776" sideWeight="0.58793396" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36757776" sideWeight="0.412066" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327112" sideWeight="0.4802982" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32601535" sideWeight="0.47374848" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32515895" sideWeight="0.47581103" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516494" sideWeight="0.4689812" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26251528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32601535" sideWeight="0.42979243" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24473535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32422245" sideWeight="0.42003414" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3177,7 +3136,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Compiles but crashes" />
     <MESSAGE value="Got the Navigation Drawer working.  Now working on wiring up the items." />
     <MESSAGE value="Going to work on Fragments" />
     <MESSAGE value="Add Social as a Fragment" />
@@ -3202,7 +3160,8 @@
     <MESSAGE value="Add Partners Item Fix Up the Agenda Details View" />
     <MESSAGE value="Submitting Ratings now!" />
     <MESSAGE value="Got Partners page working, fixed up Agenda Details View." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got Partners page working, fixed up Agenda Details View." />
+    <MESSAGE value="Get Raffle Rules and Sample Testimonials working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get Raffle Rules and Sample Testimonials working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3233,13 +3192,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java</url>
-          <line>62</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java</url>
-          <line>277</line>
+          <line>276</line>
           <properties />
           <option name="timeStamp" value="213" />
         </line-breakpoint>
@@ -3275,7 +3234,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>238</line>
+          <line>243</line>
           <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
@@ -3341,13 +3300,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>209</line>
+          <line>214</line>
           <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>274</line>
+          <line>279</line>
           <properties />
           <option name="timeStamp" value="255" />
         </line-breakpoint>
@@ -3369,6 +3328,24 @@
           <properties />
           <option name="timeStamp" value="258" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SocialFragment.java</url>
           <line>118</line>
@@ -3381,6 +3358,17 @@
           <properties class="com.parse.starter.fragments.WebFragment.OnFragmentInteractionListener" method="onFragmentInteraction" />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
+          <line>290</line>
+          <properties class="com.parse.starter.MainActivity.DrawerItemClickListener" method="onItemClick" />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -3390,43 +3378,11 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="259" />
+      <option name="time" value="266" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/SerializeAgendaItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="5" selection-start-line="12" selection-start-column="3" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42424244">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3520,36 +3476,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_separator_item.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_separator_item.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/DrawerAdapter.java">
@@ -3571,14 +3527,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/java/lang/ThreadGroup.java">
@@ -3605,30 +3561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build/generated/source/r/debug/com/parse/starter/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.888889">
-          <caret line="3918" column="66" selection-start-line="3918" selection-start-column="66" selection-end-line="3918" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3649,7 +3581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3657,57 +3588,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.51724136">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1034484">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="40" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.758621">
           <caret line="111" column="48" selection-start-line="12" selection-start-column="5" selection-end-line="111" selection-end-column="48" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/StarterApplication.java">
@@ -3727,9 +3641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding>
-            <element signature="e#6335#6336#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3744,34 +3655,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.740741">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5517242">
           <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaActivity.java">
@@ -3779,17 +3671,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="60" />
-          <folding>
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3805,7 +3686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3813,7 +3693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3825,34 +3704,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RaffleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_raffle.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="15.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.379311">
+        <state vertical-scroll-proportion="0.0">
           <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java">
@@ -3865,52 +3736,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="44.689655">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RaffleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.074074">
+          <caret line="231" column="53" selection-start-line="231" selection-start-column="38" selection-end-line="231" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/DrawerItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/AdapterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33284885">
+          <caret line="264" column="13" selection-start-line="264" selection-start-column="13" selection-end-line="264" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.740741">
+        <state vertical-scroll-proportion="0.0">
           <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#2028#3199#0" expanded="true" />
-            <element signature="e#3198#3199#0" expanded="true" />
-            <element signature="e#3311#3638#0" expanded="true" />
-            <element signature="e#3637#3638#0" expanded="true" />
-            <element signature="e#3770#3955#0" expanded="true" />
-            <element signature="e#3954#3955#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="222" column="3" selection-start-line="222" selection-start-column="3" selection-end-line="222" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="-7.5925927">
+          <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6147#6167#0" expanded="true" />
+            <element signature="e#6169#6190#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.793102">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.33279222">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8771552">
-          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
   </component>

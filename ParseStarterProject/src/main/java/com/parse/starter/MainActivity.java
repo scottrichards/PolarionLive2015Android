@@ -62,6 +62,7 @@ import com.parse.starter.model.AgendaItem;
 import com.parse.starter.model.DrawerItem;
 import com.parse.starter.utility.URLService;
 
+import com.parse.starter.model.MenuChoices;
 
 public class MainActivity extends ActionBarActivity
                           implements SocialFragment.OnFragmentInteractionListener,
@@ -74,6 +75,8 @@ public class MainActivity extends ActionBarActivity
         HomeFragment.OnFragmentInteractionListener
 {
 
+
+
   private DrawerLayout mDrawerLayout;
   private ListView mDrawerList;
   private ActionBarDrawerToggle mDrawerToggle;
@@ -83,6 +86,8 @@ public class MainActivity extends ActionBarActivity
   private Toolbar mToolbar;
   private int mPreviousPosition, mCurrentPosition;
   public static FragmentManager mFragmentManager;
+
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -140,7 +145,7 @@ public class MainActivity extends ActionBarActivity
 //    mDrawerLayout.setDrawerListener(mDrawerToggle);
 
     if (savedInstanceState == null) {
-      selectItem(0);
+      selectItem(MenuChoices.HOME);
     }
     mFragmentManager = getFragmentManager();
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
@@ -210,7 +215,7 @@ public class MainActivity extends ActionBarActivity
     Log.d("MainActivity", "StartActivity: " + className);
     switch (className) {
       case "RaffleFragment" :
-          selectItem(4);
+          selectItem(MenuChoices.RAFFLE);
           break;
       case "SignupFragment" :
           if (mToolbar != null) {
@@ -228,7 +233,7 @@ public class MainActivity extends ActionBarActivity
     Log.d("MainActivity", "StartActivity: " + className);
     switch (className) {
       case "LoginFragment" :
-        selectItem(5);
+        selectItem(MenuChoices.LOGIN);
         break;
     }
   }
@@ -260,13 +265,13 @@ public class MainActivity extends ActionBarActivity
   @Override
   public void onSignup() {
     Log.d("MainActivity", "onSignUp " );
-    selectItem(5);
+    selectItem(MenuChoices.LOGIN);
   }
 
   @Override
   public void onHomeClicked() {
     Log.d("MainActivity", "onHomeClicked" );
-    selectItem(1);
+    selectItem(MenuChoices.AGENDA);
   }
 
   // pop the last fragment of the stack and update the title
@@ -284,52 +289,12 @@ public class MainActivity extends ActionBarActivity
   private class DrawerItemClickListener implements ListView.OnItemClickListener {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-      Log.d("MainActivity","Clicked in Drawer Position: " + position);
+      Log.d("MainActivity", "Clicked in Drawer Position: " + position);
 
-
-//      switch (position) {
-//        case 1 :  mDrawerList.setItemChecked(position, true);
-//                  DrawerItem drawerItem = mDrawerAdapter.getItem(position);
-//                  if (drawerItem != null)
-//                    setTitle(drawerItem.title);
-//                  mDrawerLayout.closeDrawer(mDrawerList);
-//                  Intent agendaIntent = new Intent(MainActivity.this,AgendaActivity.class);
-//                  startActivity(agendaIntent);
-//                  finish();
-//                  break;
-//        case 2 :  Intent speakersIntent = new Intent(MainActivity.this,SpeakersActivity.class);
-//                  startActivity(speakersIntent);
-//                  finish();
-//                  break;
-//        case 3 :  Intent mapIntent = new Intent(MainActivity.this,MapsActivity.class);
-//                  startActivity(mapIntent);
-//                  finish();
-//                  break;
-//        case 4 :  Intent raffleIntent = new Intent(MainActivity.this,RaffleActivity.class);
-//                  startActivity(raffleIntent);
-//                  finish();
-//                  break;
-//        case 5 :  Intent loginIntent = new Intent(MainActivity.this,LoginActivity.class);
-//                  startActivity(loginIntent);
-//                  finish();
-//                  break;
-//        case 6: mDrawerList.setItemChecked(position, true);
-//                drawerItem = mDrawerAdapter.getItem(position);
-//                if (drawerItem != null)
-//                  setTitle(drawerItem.title);
-//                mDrawerLayout.closeDrawer(mDrawerList);
-//                FragmentManager fragmentManager = getFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                SocialFragment fragment = new SocialFragment();
-//                fragmentTransaction.add(R.id.frame_contents, fragment);
-//                fragmentTransaction.commit();
-//                break;
-//
-//      }
         selectItem(position);
     }
   }
-//
+
   private void selectItem(int position) {
     // update the main content by replacing fragments
     mPreviousPosition = mCurrentPosition;
@@ -342,20 +307,20 @@ public class MainActivity extends ActionBarActivity
     Fragment fragment;
     Bundle args;
     switch (position) {
-      case 0 :
+      case MenuChoices.HOME:
          fragment = new HomeFragment();
 
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(HomeFragment.class.getSimpleName()).commit();
         break;
-      case 1 :
+      case MenuChoices.AGENDA :
         fragment = new AgendaItemFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(AgendaItemFragment.class.getSimpleName()).commit();
         break;
-      case 2 :
+      case MenuChoices.SPEAKERS :
         fragment = new SpeakerItemFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(SpeakerItemFragment.class.getSimpleName()).commit();
         break;
-      case 3 :
+      case MenuChoices.PARTNERS :
         fragment = new WebFragment();
         args = new Bundle();
         args.putString(WebFragment.ARG_URL_PARAM, "http://54.183.27.217/2015m/partners/index.html");
@@ -364,11 +329,11 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
 
-      case 4 :
+      case MenuChoices.MAP :
         fragment = new LocationFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LocationFragment.class.getSimpleName()).commit();
         break;
-      case 5 :
+      case MenuChoices.RAFFLE :
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser == null) {  // if user is not logged in then force login before entering raffle
           fragment = new LoginFragment();
@@ -382,12 +347,12 @@ public class MainActivity extends ActionBarActivity
           fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(RaffleFragment.class.getSimpleName()).commit();
         }
         break;
-      case 6 :
+      case MenuChoices.LOGIN :
         fragment = new LoginFragment();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(LoginFragment.class.getSimpleName()).commit();
         break;
 
-      case 7 :
+      case MenuChoices.SOCIAL :
         fragment = new SocialFragment();
 //        args = new Bundle();
 //        args.putInt(DrawerFragment.ARG_DRAWER_NUMBER, position);
