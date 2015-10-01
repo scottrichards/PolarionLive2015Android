@@ -19,10 +19,103 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0097009-bfb6-41e3-8e18-8f182f1fe723" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_android_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/parse_android_1_10_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appinvite_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appstate_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_identity_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_plus_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_7_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_0_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/StarterApplication.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/StarterApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaDetailsActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/DrawerActionBarActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/LoginActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/LoginActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/MapsActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RaffleActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/RaffleActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RegisterActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/RegisterActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/SpeakersActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/SpeakersActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/WebActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/AgendaAdapter.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/adapters/AgendaAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/adapters/DrawerAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/SpeakersAdapter.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/adapters/SpeakersAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaDetailFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaItemFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/HomeFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LoginFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/MapFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/MapFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/RaffleFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SignupFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SignupFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SocialFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SocialFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SpeakerItemFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SpeakerItemFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/AgendaItem.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/AgendaItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/DrawerItem.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/DrawerItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/ImageCache.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/ImageCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/MenuChoices.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/SerializeAgendaItem.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/SerializeAgendaItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/Speaker.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/Speaker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/utility/URLService.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/utility/URLService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_maps.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_raffle.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_raffle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_register.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_register.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_speakers.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_speakers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build.gradle" afterPath="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agendaitem_grid.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agendaitem_grid.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agendaitem_list.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agendaitem_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_home.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_home.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_location.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_location.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_map.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_map.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_social.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_social.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_agenda.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_agenda.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_agenda_details.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_agenda_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_login.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_raffle.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_raffle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_register.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_register.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_speakers.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_speakers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_web.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/menu/menu_web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PolarionLive2015.iws" />
@@ -52,33 +145,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="LoginFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LoginFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.074074">
-              <caret line="231" column="53" selection-start-line="231" selection-start-column="38" selection-end-line="231" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_agenda_details.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="44.689655">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="225" column="53" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RaffleFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/RaffleFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,31 +167,37 @@
         </entry>
       </file>
       <file leaf-file-name="RaffleActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RaffleActivity.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/RaffleActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+              <caret line="31" column="9" selection-start-line="26" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5925927">
-              <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6147#6167#0" expanded="true" />
-                <element signature="e#6169#6190#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DrawerItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/DrawerItem.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/DrawerItem.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -121,7 +207,7 @@
         </entry>
       </file>
       <file leaf-file-name="MenuChoices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/MenuChoices.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
@@ -131,10 +217,10 @@
         </entry>
       </file>
       <file leaf-file-name="DrawerActionBarActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/DrawerActionBarActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,20 +229,10 @@
         </entry>
       </file>
       <file leaf-file-name="LocationFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33279222">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.5340909">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1525,7 +1601,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4323694630000" />
+        <entry key="$PROJECT_DIR$" value="4330995094000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1897,8 +1973,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/MapFragment.java" />
@@ -1930,7 +2004,6 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/AgendaItem.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java" />
-        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaActivity.java" />
@@ -1948,6 +2021,9 @@
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/build.gradle" />
+        <option value="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1962,10 +2038,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="587" />
-    <option name="y" value="87" />
+    <option name="x" value="121" />
+    <option name="y" value="23" />
     <option name="width" value="1799" />
-    <option name="height" value="1177" />
+    <option name="height" value="1134" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2248,14 +2324,13 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2410,7 +2485,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="starter" />
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2432,37 +2507,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="debug" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PolarionLive2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PolarionLive2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseStarterProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2652,15 +2705,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="237e8e4905e72e42" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Polarion/LogosImageAssets/partners.png" />
     <property name="FullScreen" value="false" />
@@ -3085,22 +3139,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="587" y="87" width="1799" height="1177" extended-state="0" />
+    <frame x="121" y="23" width="1799" height="1134" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704994" sideWeight="0.4860558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36757776" sideWeight="0.58793396" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36757776" sideWeight="0.412066" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36738703" sideWeight="0.5793967" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36738703" sideWeight="0.4206033" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32515895" sideWeight="0.47581103" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32514736" sideWeight="0.47125784" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516494" sideWeight="0.4689812" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3108,11 +3160,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24473535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32422245" sideWeight="0.42003414" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32416502" sideWeight="0.4183267" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704994" sideWeight="0.4860558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -3162,206 +3216,206 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/MapFragment.java</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/MapFragment.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/MapsActivity.java</url>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/MapsActivity.java</url>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java</url>
-          <line>71</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/MapsActivity.java</url>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java</url>
-          <line>61</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LoginFragment.java</url>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java</url>
-          <line>276</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LoginFragment.java</url>
+          <line>270</line>
           <properties />
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java</url>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java</url>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/HomeFragment.java</url>
           <line>3</line>
           <properties />
           <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/HomeFragment.java</url>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/HomeFragment.java</url>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java</url>
-          <line>147</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaItemFragment.java</url>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>243</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java</url>
+          <line>227</line>
           <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaDetailFragment.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java</url>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaDetailFragment.java</url>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="243" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/LoginActivity.java</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/LoginActivity.java</url>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/LoginActivity.java</url>
-          <line>125</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/LoginActivity.java</url>
+          <line>124</line>
           <properties />
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/LoginActivity.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/LoginActivity.java</url>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java</url>
-          <line>90</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/RaffleFragment.java</url>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java</url>
-          <line>157</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaItemFragment.java</url>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>214</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java</url>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>279</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java</url>
+          <line>263</line>
           <properties />
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java</url>
-          <line>92</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaDetailsActivity.java</url>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaDetailsActivity.java</url>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="257" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java</url>
-          <line>96</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaDetailsActivity.java</url>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java</url>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java</url>
-          <line>78</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java</url>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="260" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/DrawerActionBarActivity.java</url>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="265" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SocialFragment.java</url>
-          <line>118</line>
-          <properties class="com.parse.starter.fragments.SocialFragment.OnFragmentInteractionListener" method="onFragmentInteraction" />
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SocialFragment.java</url>
+          <line>112</line>
+          <properties class="com.polarion.starter.fragments.SocialFragment.OnFragmentInteractionListener" method="onFragmentInteraction" />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java</url>
-          <line>108</line>
-          <properties class="com.parse.starter.fragments.WebFragment.OnFragmentInteractionListener" method="onFragmentInteraction" />
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java</url>
+          <line>106</line>
+          <properties class="com.polarion.starter.fragments.WebFragment.OnFragmentInteractionListener" method="onFragmentInteraction" />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>290</line>
-          <properties class="com.parse.starter.MainActivity.DrawerItemClickListener" method="onItemClick" />
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java</url>
+          <line>274</line>
+          <properties class="com.polarion.starter.MainActivity.DrawerItemClickListener" method="onItemClick" />
           <option name="timeStamp" value="262" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java</url>
-          <line>63</line>
+          <url>file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java</url>
+          <line>47</line>
           <option name="timeStamp" value="261" />
         </line-breakpoint>
       </breakpoints>
@@ -3378,22 +3432,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1246" column="16" selection-start-line="1246" selection-start-column="16" selection-end-line="1246" selection-end-column="16" />
-          <folding>
-            <element signature="e#48865#48866#0" expanded="false" />
-            <element signature="e#48895#48896#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/ArrayAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3422,7 +3464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="513" column="0" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3430,80 +3471,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="318" column="27" selection-start-line="318" selection-start-column="27" selection-end-line="318" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#68384#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#14483#14493#0" expanded="false" />
-            <element signature="e#15244#15245#0" expanded="false" />
-            <element signature="e#15304#15305#0" expanded="false" />
-            <element signature="e#18279#18280#0" expanded="false" />
-            <element signature="e#18313#18314#0" expanded="false" />
-            <element signature="e#31447#31455#0" expanded="false" />
-            <element signature="e#33524#33532#0" expanded="false" />
-            <element signature="e#35512#35513#0" expanded="false" />
-            <element signature="e#35574#35575#0" expanded="false" />
-            <element signature="e#40900#40901#0" expanded="false" />
-            <element signature="e#40947#40948#0" expanded="false" />
-            <element signature="e#43691#43698#0" expanded="false" />
-            <element signature="e#50739#50740#0" expanded="false" />
-            <element signature="e#50802#50803#0" expanded="false" />
-            <element signature="e#50892#50893#0" expanded="false" />
-            <element signature="e#50919#50920#0" expanded="false" />
-            <element signature="e#55494#55495#0" expanded="false" />
-            <element signature="e#55556#55557#0" expanded="false" />
-            <element signature="e#55688#55689#0" expanded="false" />
-            <element signature="e#55737#55738#0" expanded="false" />
-            <element signature="e#55851#55852#0" expanded="false" />
-            <element signature="e#55905#55906#0" expanded="false" />
-            <element signature="e#58743#58744#0" expanded="false" />
-            <element signature="e#58803#58804#0" expanded="false" />
-            <element signature="e#59264#59265#0" expanded="false" />
-            <element signature="e#59314#59315#0" expanded="false" />
-            <element signature="e#59435#59436#0" expanded="false" />
-            <element signature="e#59474#59475#0" expanded="false" />
-            <element signature="e#64581#64582#0" expanded="false" />
-            <element signature="e#64607#64608#0" expanded="false" />
-            <element signature="e#66164#66165#0" expanded="false" />
-            <element signature="e#66238#66239#0" expanded="false" />
-            <element signature="e#68356#68371#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_row_item.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_separator_item.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/agenda_separator_item.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/DrawerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/adapters/DrawerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
@@ -3511,36 +3515,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/AgendaItem.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/AgendaItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_web.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/java/lang/ThreadGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SignupFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SignupFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="156" column="32" selection-start-line="156" selection-start-column="32" selection-end-line="156" selection-end-column="32" />
@@ -3548,7 +3548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/SocialFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/SocialFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
@@ -3556,7 +3556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/MapsActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
@@ -3564,70 +3564,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/utility/URLService.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/utility/URLService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/adapters/AgendaAdapter.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/adapters/AgendaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/toolbar.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.51724136">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1034484">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="40" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_agenda_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.758621">
           <caret line="111" column="48" selection-start-line="12" selection-start-column="5" selection-end-line="111" selection-end-column="48" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/StarterApplication.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/StarterApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.333334">
           <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding>
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3639,37 +3631,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaDetailFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaDetailFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-56.11111">
           <caret line="118" column="5" selection-start-line="116" selection-start-column="3" selection-end-line="118" selection-end-column="5" />
           <folding>
-            <element signature="e#4336#4337#0" expanded="true" />
-            <element signature="e#4364#4365#0" expanded="true" />
+            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_web.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5517242">
           <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="124" column="24" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="24" />
@@ -3677,51 +3668,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RegisterActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/SpeakersActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/SpeakersActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/WebActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/WebActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_raffle.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="15.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_raffle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/HomeFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
@@ -3732,28 +3722,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_signup.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/fragment_login.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="39" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/AgendaItemFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/AgendaItemFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
@@ -3761,7 +3751,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/AgendaDetailsActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/AgendaDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
@@ -3769,50 +3759,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/WebFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/WebFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/res/layout/activity_agenda_details.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="44.689655">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/RaffleActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/RaffleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <caret line="31" column="9" selection-start-line="26" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LoginFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LoginFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.074074">
-          <caret line="231" column="53" selection-start-line="231" selection-start-column="38" selection-end-line="231" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="225" column="53" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/MenuChoices.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/MenuChoices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
@@ -3820,7 +3802,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/model/DrawerItem.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/model/DrawerItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -3832,46 +3814,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33284885">
           <caret line="264" column="13" selection-start-line="264" selection-start-column="13" selection-end-line="264" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/activities/DrawerActionBarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/RaffleFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45840406">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/activities/DrawerActionBarActivity.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/RaffleFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5925927">
-          <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6147#6167#0" expanded="true" />
-            <element signature="e#6169#6190#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/fragments/LocationFragment.java">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/polarion/starter/fragments/LocationFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33279222">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.5340909">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
